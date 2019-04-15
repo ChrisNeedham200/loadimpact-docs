@@ -1,10 +1,9 @@
 ---
 layout: classic-docs
-title: I was invited to an organization, why am I getting an error that I can't run tests over 50 VUs?
+title: I was invited to an organization, why can't I run tests?
 description: How to correctly specify/choose a correct project to run your tests in LoadImpact
 categories: [frequently-asked-questions]
 order: 5
-hide: true
 ---
 
 ***
