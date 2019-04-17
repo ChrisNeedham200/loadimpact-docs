@@ -61,7 +61,7 @@ There are multiple approaches that can be taken when reviewing this table.  Depe
 5. AVG on it's own is not useful, however when combined with STDDEV you can get an idea of what most users are experiencing.
 
 ### Standard Deviation Example
-Let's take a request that is returning the following data: an average of 1s and a standard deviation of 100 ms. This tells us that most response times are between 900ms and 1.1s. To be more precise, roughly 68% of response times will fall in this range (and 95% would fall between 800ms and 1.2s, which is 2 standard deviations). Stanard Deviation isn't the only value to consider when testing, but it can be helpful to identify bottlnecks.  Always consider other available data when analyzing your results.
+Let's take a request that is returning the following data: an average of 1s and a standard deviation of 100 ms. This tells us that most response times are between 900ms and 1.1s. To be more precise, roughly 68% of response times will fall in this range (and 95% would fall between 800ms and 1.2s, which is 2 standard deviations). Standard Deviation isn't the only value to consider when testing, but it can be helpful to identify bottlnecks.  Always consider other available data when analyzing your results.
 
 
 ## Additional Metrics Available Per URL
