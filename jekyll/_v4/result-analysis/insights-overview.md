@@ -30,12 +30,10 @@ The test overview shows the test length, number of maximum VUs, and the status o
 
 Performance overview panel contains:
 - A chart with VU ramping, response time and requests per second metrics
-- The number of passing thresholds / total thresholds
-- The number of passing checks / total checks
-- The number of passing requests / total requests
 - Performance Alerts, based on what our algorithms detect.
+- A high level summary of your test (If no issues were detected)
 
-Your first hint at a good or bad result will be here.  Here are the most common patterns to consider.  Our Performance Alerts will notify you if some of these are detected.
+The first signal of a good or bad result will generally be in the Performance overview panel.  Here are the most common patterns to consider.  Our Performance Alerts will notify you if some of these are detected.
 
 Typical signs of a good result:
 - Response time has a flat trend for the duration of the test
@@ -46,11 +44,9 @@ Typical signs of a performance issue/bottleneck
 - Response times rise, then quickly bottom out and stay flat
 - Request rates do not rise with VUs (and response times start to increase)
 
-This is not an all inclusive list. You should use these patterns as a first indicator of good or bad performance.
+This is not an all inclusive list. You should use these patterns as a first indicator of good or bad performance of your test.
 
-![Insights: Performance overview]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-performance-overview-12-2018.png)
-
-*Note*: Checks are different than thresholds and will not mark your test as failed; see [how to setup thresholds to determine the test outcome](https://docs.k6.io/docs/thresholds).
+![Insights: Performance overview]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-overview/insights-performance-status.png)
 
 ### Filters
 
@@ -60,6 +56,7 @@ The filter section allows you to:
 - Change data aggregation that is used in test breakdown structure and analysis panels(min, mean, max, and different percentiles)
 
 ![Insights: filters]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-filters.png)
+
 
 ### Breakdown tree
 
