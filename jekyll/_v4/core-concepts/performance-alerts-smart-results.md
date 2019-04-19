@@ -50,7 +50,7 @@ Sample result: <a href="https://app.loadimpact.com/k6/anonymous/1026ecd031c0481e
 
 ***
 
-## Test Health Performance Alerts
+## Test Health and Informational Performance Alerts
 
 Test Health Performance Alerts are alerts that intend to highlight test or script related issues. These issues, if not addressed, can either skew your results or make result analysis harder to parse through. These alerts are often quickly solved through changes in the test script or test configuration.
 
@@ -60,7 +60,9 @@ Test Health Performance Alerts are alerts that intend to highlight test or scrip
 
 ### Third Party Content
 
-This alert is raised when we detect more than 3 different domains in a test. This is typically caused by your test script containing requests to 3rd party resources such as CDNs, social media scripts, analytic tools, etc. It's generally recommended to remove third party requests as it may violate the terms of service of that third party, that third party may throttle your requests skewing the percentiles of your results, or you may have no ability to impact performance of that third party.
+**This is an informational alert, we strongly recommend you remove third party requests from your test**
+
+This alert is raised when we detect more than 3 different domains in a test. This is typically caused by your test script containing requests to 3rd party resources such as CDNs, social media scripts, analytic tools, etc. It's recommended to remove third party requests as it may violate the terms of service of that third party, that third party may throttle your requests skewing the percentiles of your results, or you may have no ability to impact performance of that third party.
 
 *Special Notes:*
 - You may have a valid reason to test your CDN. Most CDNs charge based on usage so your tests could result in additional costs from your CDN.
@@ -70,6 +72,8 @@ Refer to: [Why should I filter domains?]({{ site.baseurl }}/4.0/frequently-asked
 ***
 
 ### Too Many URLs
+
+**This is an informational alert, we strongly recommend you group dynamic URLs as it will make analysis easier**
 
 This alert is raised when we detect more than 500 unique URLs in your test results. This is commonly caused by a URL that contains a query parameter that is unique per iteration. e.g. tokens, session IDs, etc. You should utilize the URL grouping feature of k6 to combine these unique URLs into a single metrics. You can
 

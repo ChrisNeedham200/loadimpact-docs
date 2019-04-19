@@ -81,3 +81,7 @@ Further, you may wish to view some different details about this request during t
 - If you have a large number of URLs that can't be grouped (or removed), sorting and/or filtering by tags comes in handy:
 
 ![HTTP Table Tags]({{ site.baseurl }}/assets/img/v4/result-analysis/http-table/http-table-tags.png)
+
+***
+
+**Next**: [Insights: Analysis Tab]({{ site.baseurl }}{% link _v4/result-analysis/insights-analysis-view.md %})

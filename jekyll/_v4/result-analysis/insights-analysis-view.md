@@ -58,3 +58,5 @@ To add a metric to the comparison area click the `+` icon in the top right for t
 Once added the metric will appear in the comparison area and you can compare it to the other metrics.
 
 ![Insights: Analysis section metrics comparison]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-analysis-tab/insights-analysis-section-metrics-compare.png)
+
+***

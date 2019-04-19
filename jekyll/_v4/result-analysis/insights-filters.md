@@ -41,3 +41,7 @@ When the aggregation method is changed, it will change the result aggregation by
 ![Insights: Statistics aggregation function changed]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-filters-aggregation-stats-funs-changed.png)
 
 *Note: this will apply only to metrics type "trend". Read more about [k6 metrics](https://docs.k6.io/docs/result-metrics).*
+
+***
+
+**Next**: [Insights: HTTP Table]({{ site.baseurl }}{% link _v4/result-analysis/insights-http-table.md %})

@@ -15,7 +15,7 @@ Insights is designed to be the perfect companion to [k6](https://k6.io/), a conv
 
 Continuous use of Insights will also enable the performance trending functionality to keep track of how the performance of your system changes over time. This is good for spotting performance regressions before they become a larger problems, ensuring you are within SLAs for requests and more, depending on your use case/need.
 
-The Insights page is divided into these 5 sections:
+The Insights page is divided into these sections:
 - TOC
 {:toc}
 
@@ -48,52 +48,66 @@ This is not an all inclusive list. You should use these patterns as a first indi
 
 ![Insights: Performance overview]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-overview/insights-performance-status.png)
 
-### Filters
+## Filters
 
 The filter section allows you to:
 
-- Filter results by user tags and system tags.
+- Filter results system or user defined tags
 - Change data aggregation that is used in test breakdown structure and analysis panels(min, mean, max, and different percentiles)
 
 ![Insights: filters]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-filters.png)
 
 
-### Breakdown tree
+## Result Tabs
 
-The breakdown tree section contains your test script in a visual way; most of the components (thresholds, groups, requests...) that you've added in your script will be represented in the same order in the breakdown structure. The breakdown tree was designed to be error driven, you will notice a red bar on the left of items with errors. Also take note of the three dots on the far right. This allows you to add an individual metric to the Metrics tab for analysis.
+The result tabs allow you to dig into the specific result data sets from your test. We present the following tabs to organize your result data:
 
-This section allows you to quickly:
+Tab Name   | Defintion                                                             | Add to analysis? | Sorting
+-----------|-----------------------------------------------------------------------|------------------|----------------
+Thresholds | List of your Thresholds in the order they are defined in your script. | Yes              | In order defined
+Checks     | List of Checks, organized into Groups (if used).                      | Yes              | By group, or list (all)
+HTTP       | List of HTTP requests made, organized into Groups (if used).          | Yes              | By group, or list (all)
+Websocket  | List of Websocket requests made, organized into groups (if used)      | Yes              | By group, or list (all)
+Analysis   | Tab used to overlay data for analysis                                 | N/A              | N/A
+Script     | Script used to run your test (cloud tests only)                       | N/A              | N/A
+{: class="table table-bordered"}
 
-- Find failing errors: checks, thresholds and requests.
-- Find the slowest/fastest groups and requests.
-- Visualize custom metrics.
-- Drill down check, custom and request metrics.
+These tabs let you dig into your test data in a visual way.  You are able to click on any metric to expand a graph.  You can also add theses graphs to the Analysis tab, for comparison. This allows you to look for interesting correlations in the data. These tabs are designed to be error driven.  Note the &#10003; or &#10005; next to the individual metrics for Thresholds, Checks, HTTP, or Websockets if failures were encountered.  In the image below, note our failing check, as an example.
 
+![Checks tab with a failing check]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-overview/insights-checks.png)
 
+**Note**: The Thresholds, Checks, HTTP, and Websocket tabs will only be present if data exists for them.  For example, if you ran a test that only made Websocket requests with a threshold defined, you would not see the Checks or HTTP tab (as no data would exist for either).
 
-![Insights: test breakdown structure]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-breakdown-structure.png)
+Refer to these articles for more specific information on:
+- [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
+- [Checks]({{ site.baseurl }}{% link _v4/core-concepts/checks.md %})
+- [HTTP Table]({{ site.baseurl }}{% link _v4/result-analysis/insights-http-table.md %})
 
-### Metrics
+#### Analysis
 
-The analysis section is where you analyze selected metrics. The section allows you to:
+The analysis tab enables you to analyze and compare selected metrics. This is helpful for finding correlations in the results to investigate.
 
-- Get a quick overview of some metrics: VUs, response time and check failure aggregation.
-- Visualize custom metrics.
-- Add, compare, and analyze metrics from the breakdown section.
+To effectively use this tab, we recommend looking at the following things:
 
-![Insights: analysis section]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-metrics-analysis.png)
+- Ensure that VUs and Request rate follow the same trend.
+- Add and compare interesting requests from the HTTP and Websocket tabs to compare with other metrics
+- Check the load generator CPU and Memory consumption by clicking on "add metrics" to ensure they are not saturated (metrics only available for tests run in the cloud)
+- Add thresholds that have been exceeded
+- Add checks that have failures
 
-### URL Table
+How you work through the analysis will depend on your individual test results.  You may or may not need to add certain things. The above list is not meant to be all inclusive, rather a starting point in helping you dig into performance related issues so you can identify them. For more information, please refer to our article on the [Analysis Tab]({{ site.baseurl }}{% link _v4/result-analysis/insights-analysis-view.md %})
 
-The URL-table section is where you can get a raw overview of the URLs in your test. It will help you to:
+![Insights: analysis section]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-overview/analysis-tab.png)
 
-- Get an overview of all the URLs tested in your k6 test.
-- Identify which URLs are returning expected or unexpected status codes.
-- Sort the URLs by different column values.
-- Filter the URLs by [k6 tags](https://docs.k6.io/docs/tags-and-groups).
+***
 
-![Insights: URL table]({{ site.baseurl }}/assets/img/v4/result-analysis/insights-url-table.png)
-
+See Also:
+- [Insights: Performance Overview]({{ site.baseurl }}{% link _v4/result-analysis/insights-performance-overview.md %})
+- [Insights: filters]({{ site.baseurl }}{% link _v4/result-analysis/insights-filters.md %})
+- [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
+- [Checks]({{ site.baseurl }}{% link _v4/core-concepts/checks.md %})
+- [Insights: HTTP Table]({{ site.baseurl }}{% link _v4/result-analysis/insights-http-table.md %})
+- [Insights: Analysis Tab]({{ site.baseurl }}{% link _v4/result-analysis/insights-analysis-view.md %})
 
 
 <!--stackedit_data:
