@@ -57,7 +57,7 @@ you would set the environment variable `MY_HOSTNAME` and execute k6 like:
 
 - For local execution:    `k6 run -e MY_HOSTNAME=test.loadimpact.com script.js`
 
-- For uploading results:    `k6 run -o cloud -e MY_HOSTNAME=test.loadimpact.com script.js`
+- For local execution with Insights streaming:    `k6 run -o cloud -e MY_HOSTNAME=test.loadimpact.com script.js`
 
 
 ### Reading from system environment
