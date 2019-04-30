@@ -4,7 +4,9 @@ title: Introduction to test scripting
 description: An intro to k6 test scripting
 categories: [examples]
 order: 0
-redirect_from: /4.0/test-scripting/intro/
+redirect_from:
+    - /4.0/test-scripting/
+    - /4.0/test-scripting/intro/
 ---
 
 Welcome to the intro guide for scripting k6 tests.

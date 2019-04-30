@@ -4,7 +4,9 @@ title:  Local test execution - "Hello world"
 description: A guide on how to trigger your first tests from the command line. Intended for more advanced users.
 categories: [getting-started]
 order: 5
-redirect_from: /4.0/getting-started/hello-world/
+redirect_from:
+    - /4.0/getting-started/hello-world/
+    - /4.0/test-running/
 ---
 
 ***
