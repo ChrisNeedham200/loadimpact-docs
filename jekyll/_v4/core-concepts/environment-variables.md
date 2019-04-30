@@ -51,9 +51,14 @@ export default function() {
 }
 {% endhighlight %}
 
-you would set the environment variable `MY_HOSTNAME` and execute k6 like this:
+you would set the environment variable `MY_HOSTNAME` and execute k6 like:
 
-`k6 run -e MY_HOSTNAME=test.loadimpact.com script.js`
+- For cloud execution:   `k6 cloud -e MY_HOSTNAME=test.loadimpact.com script.js`
+
+- For local execution:    `k6 run -e MY_HOSTNAME=test.loadimpact.com script.js`
+
+- For uploading results:    `k6 run -o cloud -e MY_HOSTNAME=test.loadimpact.com script.js`
+
 
 ### Reading from system environment
 
