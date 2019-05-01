@@ -8,6 +8,12 @@ order: 8
 
 ***
 
+<h2>Background</h2>
+
+Scripting examples on how to execute a load test that will upload a file to the System Under Test(SUT).
+
+***
+
 ## Uploads
 
 ### Binary file upload

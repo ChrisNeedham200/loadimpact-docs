@@ -8,6 +8,13 @@ order: 9
 
 ***
 
+<h2>Background</h2>
+
+Scripting example on how to generate UUIDs in your load test.
+
+***
+
+
 ## UUID
 
 ### Generate v1 and v4 UUIDs

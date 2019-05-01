@@ -10,6 +10,7 @@ redirect_from: /4.0/test-scripting/custom-metrics/
 ***
 
 <h2>Background</h2>
+
 Custom Metrics allow you to track something that is not part of the standard metrics in LoadImpact.
 
 The are four metric types in k6; `Counter`, `Gauge`, `Rate` and `Trend`. All four can be used when creating custom metrics. Below we provide examples of each and how they could be utilized within a test.

@@ -9,6 +9,13 @@ redirect_from: /4.0/test-scripting/http-authentication/
 
 ***
 
+<h2>Background</h2>
+
+Scripting examples on how to use different authentication or authorization methods in your load test. 
+
+
+***
+
 ## Authentication/Authorization
 Examples of various HTTP Authentication methods that can be used with k6. These, plus other examples can be found within the [k6 GitHub Repo](https://github.com/loadimpact/k6/tree/master/samples/auth)
 

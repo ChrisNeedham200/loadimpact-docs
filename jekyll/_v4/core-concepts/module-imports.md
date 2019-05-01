@@ -12,6 +12,7 @@ redirect_from:
 ***
 
 <h2>Background</h2>
+
 LoadImpact 4.0 and k6 come with a batteries included standard library.  They also support importing external libraries. This article provides an explanation and code samples on how to import the included or external modules into your k6 script.
 
 _**Best Practice Alert:**_ We recommend that you start building out you own custom library for common actions you find yourself doing in your test scripts.  This is especialy important to make your efforts scalable to the rest of your team.

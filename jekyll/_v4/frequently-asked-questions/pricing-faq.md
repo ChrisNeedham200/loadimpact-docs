@@ -13,7 +13,9 @@ redirect_from:
 
 ***
 
-Here are some of our most frequently asked questions about pricing. If your question isn't answered here, please contact [support](mailto:support@loadimpact.com).
+<h2>Purpose</h2>
+
+This document contains some of our most frequently asked questions about pricing. If your question isn't answered here, please contact [support](mailto:support@loadimpact.com).
 
 - TOC
 {:toc}

@@ -8,6 +8,13 @@ order: 10
 
 ***
 
+<h2>Background</h2>
+
+Scripting example on how to test websocket APIs.
+
+***
+
+
 ## WebSocket
 
 ### Testing a WebSocket API

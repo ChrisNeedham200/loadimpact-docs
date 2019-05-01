@@ -7,6 +7,15 @@ order: 8
 redirect_from: /4.0/test-scripting/test-structure-breakdown/
 ---
 
+***
+
+<h2>Background</h2>
+
+Explanation of the breakdown of the different parts of a test script, and what they are used for.
+
+***
+
+
 A k6 test script can be broken down into four distinct life-cycle stages.
 
 This can be illustrated by looking at a skeleton of k6 test:

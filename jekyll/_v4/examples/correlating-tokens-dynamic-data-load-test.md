@@ -9,6 +9,13 @@ redirect_from: /4.0/test-scripting/handling-dynamic-tokens-in-k6-scripts/
 
 ***
 
+<h2>Background</h2>
+
+Scripting examples on how to correlate dynamic data in your test script.  Correlation is often required when using the Chrome Extension or HAR converter to generate your test script.  This is due to the fact that those tools will capture session IDs, CSRF tokens, VIEWSTATE, wpnonce, and other dynamic values from your specific session.  These tokens typically expire very quickly.  This is one of the most common things that users will script for when testing user journeys across websites or web apps. 
+
+***
+
+
 ## Correlation
 In a load testing scenario, correlation means extracting one or more values from the response of one request and then reusing them in subsequent requests. Often times this could be getting a token or some sort of ID necessary to fulfill a sequence of steps in a user journey.
 

@@ -8,6 +8,13 @@ order: 2
 
 ***
 
+<h2>Background</h2>
+
+Scripting examples on how you can interact with cookies during your load test, if required.
+
+***
+
+
 ## Cookies
 As HTTP is a stateless protocol, cookies are used by server-side applications to persist data on client machines. This is used more or less everywhere on the web, commonly for user session tracking purposes. In k6 cookies are managed automatically by default, however there're use cases where access to read and manipulate cookies are required.
 

@@ -12,6 +12,13 @@ redirect_from:
 
 ***
 
+<h2>Background</h2>
+
+LoadImpact's definition of Virtual Users(VUs) along with supplemnental information to cover common questions about VUs.
+
+***
+
+
 Virtual Users(VUs) are the entities in LoadImpact that execute your test script and make HTTP(s) or websocket requests. VUs are concurrent and will continously iterate through the default function until they ramp down or the test ends.  Any number of VUs will create a number of sessions a factor larger than their total count, depending on test and script length.
 
 For example, if you ran a test with 10 VUs for 10 minutes and the default function took each VU 30 seconds to complete, you would see roughly 200 completions/total sessions generated from this test. This is approximate and will vary based on your ramping configuration.

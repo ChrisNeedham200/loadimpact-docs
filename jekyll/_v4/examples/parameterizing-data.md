@@ -8,6 +8,12 @@ order: 4
 
 ***
 
+<h2>Background</h2>
+
+Scripting examples on how to parameterize data in a test script. Parameterization is typically necessary when Virtual Users(VUs) will make a POST, PUT, or PATCH request in a test.  Parameterization helps to prevent server side caching from impacting your load test.  This will make your test more realistic.
+
+***
+
 ## Data files/Parameterization
 
 ### Reading parameterization data from a CSV file

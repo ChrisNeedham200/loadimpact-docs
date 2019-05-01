@@ -8,6 +8,11 @@ order: 5
 
 ***
 
+<h2>Background</h2>
+
+Scripting example on how to handle HTML forms in a load test.
+
+***
 
 ## HTML
 

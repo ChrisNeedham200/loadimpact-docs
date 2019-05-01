@@ -7,6 +7,10 @@ order: 10
 redirect_from: /4.0/test-scripting/test-setup-teardown-life-cycle/
 ---
 
+***
+
+<h2>Background</h2>
+
 Being able to execute code pre and post test is common place when running tests. It can be used to prepare the system under test with data, or maybe to trigger the provisioning of an ephemeral environment of the system under test itself, and at the end to reset or take down that what was set up before the test.
 
 In k6 tests there are two life cycle hooks for running code pre and post test, `setup()` and `teardown()`.
