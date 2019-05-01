@@ -8,7 +8,7 @@ order: 5
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 The Organizations, Projects, and Team Member functionality enables account administrators to organize and control access to their LoadImpact account and subscription for collaboration purposes. However, newly invited members, not being familiar with this structure, sometimes ask us questions or get stuck when trying to run tests. For example:
 

@@ -8,7 +8,7 @@ order: 0
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 Explanation of the different test statuses in LoadImpact along with the code returned.  The code returned here is different than what is returned by k6.
 
 {% include 4.0/scripting-examples/status-codes.md %}

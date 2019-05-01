@@ -9,7 +9,7 @@ redirect_from: /4.0/test-running/test-scheduling/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 It's not always feasible to be able to trigger a test to run when you need it.  The scheduling option in LoadImpact allows you to configure a test to execute at a particular time, and on a regular interval, if needed.
 

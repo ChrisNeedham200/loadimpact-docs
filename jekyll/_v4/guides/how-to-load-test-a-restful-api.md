@@ -9,7 +9,7 @@ redirect_from: /4.0/how-to-tutorials/how-to-load-test-a-restful-api/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 This guide will demonstrate how to utilize [k6](https://k6.io/) to test your API endpoints. But first, let's consider some possible reasons why we'd want to do that:
 1. To ascertain that all our API endpoints produce correct results.

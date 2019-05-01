@@ -8,7 +8,7 @@ order: 6
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 A common task to any development is debugging your code to make sure it's producing the expect output and results. LoadImpact utilizes JavaScript as the scripting language for writing your load tests.  Because tests are written in real code, you can and should debug your tests scripts before running them.  Utilize the tips in this document to aid you in speeding up your script developement.
 

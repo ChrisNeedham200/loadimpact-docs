@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/1172458-k6-insights-overview
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 Insights is designed to be the perfect companion to [k6](https://k6.io/), a convenient and powerful solution for storing and analyzing your k6 test results.
 

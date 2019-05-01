@@ -9,7 +9,7 @@ redirect_from: /4.0/test-scripting/tags/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 Tags are a powerful tool that allow you to analyze your data from a few different perspectives.  Some examples of this include:
 

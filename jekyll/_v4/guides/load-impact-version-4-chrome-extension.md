@@ -9,7 +9,7 @@ redirect_from: /4.0/how-to-tutorials/load-impact-version-4-chrome-extension/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 
 The LoadImpact k6 Test Script Recorder Chrome extension allows you to generate the bulk of your test scripts simply by browsing like a user would on your site or web app.  The script created gives you a foundation which you can further edit, as required.

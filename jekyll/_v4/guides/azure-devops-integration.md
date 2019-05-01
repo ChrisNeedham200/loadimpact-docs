@@ -9,7 +9,7 @@ redirect_from: /4.0/integrations/azure-devops-integration/
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 The intent of this guide is to walk you through the steps of triggering tests as part of your Azure Pipelines within Azure DevOps. Before you get started go to [https://dev.azure.com/](https://dev.azure.com/) and click _Start Free_ or login with your existing Microsoft account.
 

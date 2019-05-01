@@ -9,7 +9,7 @@ redirect_from: /4.0/result-analysis/insights-smart-results/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 LoadImpact's Performance Alerts are algorithms built into LoadImpact Insights. Our algorithms are automatically executed as part of test result processing when you stream your results into our cloud service or execute your test on our cloud infrastructure. These alerts can be broken down into two categories Test Health Performance Alerts and Smart Result Performance Alerts.
 

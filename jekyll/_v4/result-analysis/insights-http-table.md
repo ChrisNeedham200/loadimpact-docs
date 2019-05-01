@@ -11,7 +11,7 @@ redirect_from:
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 The HTTP Table in insights allows you to inspect individual HTTP requests made during your test. This table gives you a very granular view of all the requests happening during your test so you can dig into them individually, as required.
 

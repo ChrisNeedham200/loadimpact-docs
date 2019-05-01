@@ -11,7 +11,7 @@ redirect_from:
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 
 

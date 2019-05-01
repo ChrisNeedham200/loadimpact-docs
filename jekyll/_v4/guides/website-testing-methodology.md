@@ -9,7 +9,7 @@ redirect_from: /4.0/testing-methodologies/website-testing-methodology/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 If you have already read our [Getting Started Methodology]({{ site.baseurl }}{% link _v4/getting-started/basic-load-testing-methodology.md %}) similar concepts are repeated here. This document will touch on some more specific aspects to help you start testing a real user journey of a website or web app. Testing of these systems generally involves simulating real user behavior and complex actions in some logical flow or journey. For this reason we have combined this into a single document. As you start your testing we recommend that you _start small and iterate, iterate, iterate._
 

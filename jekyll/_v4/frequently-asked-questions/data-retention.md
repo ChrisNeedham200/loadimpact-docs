@@ -9,7 +9,7 @@ hide: true
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 This article is intended to provide all the necessary information to questions about LoadImpact's Data Retention plan.
 
 ***

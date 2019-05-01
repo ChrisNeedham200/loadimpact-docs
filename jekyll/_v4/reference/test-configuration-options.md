@@ -9,7 +9,7 @@ redirect_from: /4.0/test-scripting/test-configuration-options/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 The below reference is a partial list of the configuation options.  Options only available locally are omitted.  To see a full list, please refer to the [k6 documentation](https://docs.k6.io/docs/options).
 

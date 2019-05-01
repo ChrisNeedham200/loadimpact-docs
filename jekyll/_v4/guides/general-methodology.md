@@ -12,7 +12,7 @@ redirect_from:
 ***
 
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 As developers and testers we love to jump straight into the tools, but successful testing starts with successful planning. The intent of this document is to provide additional guidance to best prepare you for testing and to meet your testing goals. This methodology assumes that some initial performance testing is being done before automating testing in a CI/CD pipeline. Testing can be broken down into the following phases:
 

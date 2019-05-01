@@ -8,7 +8,7 @@ order: 2
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 This article explains the reasons why you should filter domains within your load test, how to filter domains and some cases where you may actually not want to filter domains.
 

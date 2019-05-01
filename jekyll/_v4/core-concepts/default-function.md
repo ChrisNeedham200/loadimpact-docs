@@ -11,7 +11,7 @@ redirect_from:
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 There are 4 parts to a test script. This article describes the main function (default function), also known as VU code.  It's important to note that Virtual Users will iterate over this function as long as the test is running. Each iteration should be considered a new session.
 

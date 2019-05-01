@@ -11,7 +11,7 @@ redirect_from:
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 Welcome to LoadImpact's documentation! The documentation provided in this section of our knowledge base is for v4.0 of our product.  This version of LoadImpact was released in Summer 2018.  It allows you to write your test cases in real JavaScript code. The load generation aspect of v4.0 is based on an open source load generator, k6.  k6 also functions as the command line interface to communicate with the web interface.  This means you can write your test scripts locally and trigger them from the command line.
 

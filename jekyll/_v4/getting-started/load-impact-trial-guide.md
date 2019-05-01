@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/738684-load-testing-with-bluemix-and-load
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 The purpose of this document is to aid you in exploring the primary features available in LoadImpact as you evaluate our service, build your proof of concept, or just explore the world of load and performance testing.  If you complete the guide, you will start with the simpliest test that requires only inputting a URL and end with triggering tests from the command line.
 
 LoadImpact is built around an open source load generator which also functions as a command line interface to communicate with our cloud platform. This load generator is named k6, it is built in Go and allows you to express your test cases with code written in JavaScript ES6. At the core, with everything as code, you gain full control over how your tests run, and what is happening during tests. **Every LoadImpact test has a JavaScript file that will control it's configuration and it's execution.**

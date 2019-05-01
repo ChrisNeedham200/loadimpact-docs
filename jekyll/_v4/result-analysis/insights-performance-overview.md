@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/1172467-insights-performance-overview
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 The performance overview section contains a timeline of the VUs ramping, aggregated response time and requests per second. The [LoadImpact Performance Alert algorithms]({{ site.baseurl }}{% link _v4/core-concepts/performance-alerts-smart-results.md %}) will also poulate here, if issues are detected. While our Performance Alerts are designed to help save you time from having to dig too deeply into results. If no issues are detected, we will display a green check with some high level metrics from your test.  A green check only means our algorithms have not detected any patterns related to performance issues. You should still dig into your data, as required.
 

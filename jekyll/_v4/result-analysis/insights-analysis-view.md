@@ -10,7 +10,7 @@ redirect_from:
 ---
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 The Analysis tab in insights allows you to dig into the trends of the various data recorded while your test was running.  It's a great place to look to get an understanding of performance of the System Under Test (SUT). It can also help you find important correlations in your data between the various metrics. At the top, The comparison chart is where you analyze selected metrics. Below that are the avilable metrics you add for comparison avaiable metrics to add to your test.
 
 Use this tab to compare and analyze additional metrics and their correlations, including any custom metrics, group timings, HTTP request durations, etc.

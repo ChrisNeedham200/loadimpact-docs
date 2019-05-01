@@ -9,7 +9,7 @@ redirect_from: /4.0/integrations/circleci-integration/
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 This guide and sample describes how to integrate LoadImpact 4.0 with CircleCI. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-circleci-example). This guide will help you get up and running with k6, CircleCI and LoadImpact Insights (with build notifications sent to Slack). This guide assumes you are familiar with k6 and CircleCI.
 

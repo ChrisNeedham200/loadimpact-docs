@@ -9,7 +9,7 @@ redirect_from: /4.0/test-scripting/checks/
 
 ***
 
-<h1>Background</h1>
+<h2>Background</h2>
 
 Checks are like asserts but differ in that they don't halt the execution of the test if a `false` result is encountered, instead the pass/fail result of the check is stored and the test continues executing.
 

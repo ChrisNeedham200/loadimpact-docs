@@ -9,7 +9,7 @@ redirect_from: /4.0/test-scripting/environment-variables/
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 Environment variables is a useful mechanism for being able to change configurations or behavior of a test without changing the code itself, e.g. making your tests reusable across different hosting environment (dev, staging, production etc.) by changing a base URL.
 
 - TOC

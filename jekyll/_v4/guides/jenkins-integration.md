@@ -9,7 +9,7 @@ redirect_from: /4.0/integrations/jenkins-integration/
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 This guide and sample describes how to integrate LoadImpact 4.0 with Jenkins v2 and above. Your exact installation and needs may vary and your business needs should be taken into consideration when designing your integration. This document follows a sample. Supporting files for the below sample are available in our [GitHub repo](https://github.com/loadimpact/k6-jenkins-example).
 

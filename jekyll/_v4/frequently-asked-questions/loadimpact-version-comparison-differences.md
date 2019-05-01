@@ -10,7 +10,7 @@ redirect_from:
 
 ***
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 An overview of some key differences between Load Impact 3.0 and 4.0.
 

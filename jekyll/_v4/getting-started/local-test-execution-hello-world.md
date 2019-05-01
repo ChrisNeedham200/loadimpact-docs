@@ -15,7 +15,7 @@ redirect_from:
 </div>
 
 
-<h1>Purpose</h1>
+<h2>Purpose</h2>
 
 In this document, we will focus on running a very simple test from the command line with k6. This is so you can understand the various parts of k6 and how they relate to one another. We will be making a single request to `https://test.loadimpact.com`, but feel free to change that to a URL, or API endpoint, that you _are allowed to test_.
 
