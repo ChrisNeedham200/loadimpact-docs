@@ -17,13 +17,13 @@ jobs:
             tar xfz md-proofer-v*.tar.gz
             sudo chmod +x ./md-proofer
 
-            echo "Test Load Impact 3.0 Markdown files"
+            echo "Test LoadImpact 3.0 Markdown files"
             echo "===================================================================================="
             ./md-proofer lint jekyll/_v3/
-            echo "\n\nTest Load Impact 4.0 Markdown files"
+            echo "\n\nTest LoadImpact 4.0 Markdown files"
             echo "===================================================================================="
             ./md-proofer lint jekyll/_v4/
-            echo "\n\nTest Load Impact API Markdown files"
+            echo "\n\nTest LoadImpact API Markdown files"
             echo "===================================================================================="
             ./md-proofer lint jekyll/_api/
       - restore_cache:

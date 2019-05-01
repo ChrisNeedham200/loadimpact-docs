@@ -11,7 +11,7 @@ redirect_from: /knowledgebase/articles/174137-what-status-codes-are-there
 
 
 
-Load Impact stores the HTTP status/return codes on a per-URL basis, and reports for each individual URL how many times it has seen a particular status code from the server, and what response times (avg/min/max) it got for that particular code.
+LoadImpact stores the HTTP status/return codes on a per-URL basis, and reports for each individual URL how many times it has seen a particular status code from the server, and what response times (avg/min/max) it got for that particular code.
 
 An example: A load test ramping up from 1 to 5000 concurrent users that contains a user scenario that loads “http://some.dom.ain/index.html”. At the start, when the load level is low, the web server being tested performs as it should and returns HTTP 200 codes plus the HTML file that was requested, but when the load level passes 4000 concurrent users, the server starts to run out of some resource (e.g. database connections) and begins returning “500 server error” instead of the expected content. Towards the end of the test the 500-codes (errors) occur more and more frequently. This means that we might end up with a test result where the “index.html” resource got e.g. 23,567 responses with the status code “200” and 12,856 responses where the status code was “500” and no content was returned. Most of the 200-codes occured early in the test while the 500-codes occured in the later stages, when the load level was higher.
 

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: What IP Addresses are used by Load Impact's to generate load?
-description: List and explanation of the IP addresses Load Impact's Lua based product uses to generate load during a test.
+title: What IP Addresses are used by LoadImpact's to generate load?
+description: List and explanation of the IP addresses LoadImpact's Lua based product uses to generate load during a test.
 categories: [frequently-asked-questions]
 order: 5
 redirect_from:
@@ -10,9 +10,9 @@ redirect_from:
 ---
 
 ***
-This article contains the information regarding the various IP addresses Load Impact will use during a test, validation or script creation.
+This article contains the information regarding the various IP addresses LoadImpact will use during a test, validation or script creation.
 
-If you are looking to run tests behind a firewall completely, you may want to consider our new open source load generator, k6. k6 allows you to run tests locally and stream those results into Load Impact Insights, for analysis. To get started with k6, please refer to our [Quick Start Guide]({{ site.baseurl }}{% link _v4/getting-started/local-test-execution-hello-world.md %})
+If you are looking to run tests behind a firewall completely, you may want to consider our new open source load generator, k6. k6 allows you to run tests locally and stream those results into LoadImpact Insights, for analysis. To get started with k6, please refer to our [Quick Start Guide]({{ site.baseurl }}{% link _v4/getting-started/local-test-execution-hello-world.md %})
 
 
 If you are unable to whitelist a large ranges of IPs, you may want to consider another method, such as header or query parameter whitelisting, as described in [this article]({{ site.baseurl }}/3.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/)
@@ -27,7 +27,7 @@ This used for validations, and must be included in every test, regardless of loa
 
 54.208.147.247
 
-This is only for URL generated tests from within the Load Impact platform.
+This is only for URL generated tests from within the LoadImpact platform.
 
 **Proxy Recorder IP addresses:**
 
@@ -39,7 +39,7 @@ Note: Please ensure that your servers are allowed outbound connections within th
 
 ### Load Zones
 
-Load Impact uses AWS for cloud load generators. For the IP addresses used in the different load zones and filtering methods please refer directly to [Amazon](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
+LoadImpact uses AWS for cloud load generators. For the IP addresses used in the different load zones and filtering methods please refer directly to [Amazon](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
 
 If you prefer to view the ranges directly, within the above link, the [ip-ranges.json](https://ip-ranges.amazonaws.com/ip-ranges.json) file provides the updated list of IP addresses used by our load generators. In order to know which IP range/s can be used, you need to filter the `service` of type EC2 and the `region` of the selected load zone/s in your test configuration.
 

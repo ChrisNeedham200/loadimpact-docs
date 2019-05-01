@@ -9,19 +9,19 @@ redirect_from: /knowledgebase/articles/1113808-browser-emulation
 
 ***
 
-Load Impact has the ability to emulate different browsers. This can be changed directly per user scenario using **http.set_user_agent_string()** and **http.set_max_connections()** from our [Load Script API](https://loadimpact.com/load-script-api). Alternatively, you can change the emulation for the entire test using the preconfigured options within Test Configuration:
+LoadImpact has the ability to emulate different browsers. This can be changed directly per user scenario using **http.set_user_agent_string()** and **http.set_max_connections()** from our [Load Script API](https://loadimpact.com/load-script-api). Alternatively, you can change the emulation for the entire test using the preconfigured options within Test Configuration:
 
 
 
 ## Desktop Browsers:
 
 
-Load Impact
+LoadImpact
 
 ```
         Max connections: 30
         Max connections per host: 4
-        User agent: LoadImpactRload/3.2.0 (Load Impact; http://loadimpact.com);
+        User agent: LoadImpactRload/3.2.0 (LoadImpact; http://loadimpact.com);
 ```
 
 
@@ -56,7 +56,7 @@ Safari
         Max connections per host: 6
         User agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8) AppleWebKit/537.13+ (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2"
 ```
-Load Impact Max(for API testing)
+LoadImpact Max(for API testing)
 ```
         Max connections: 30
         Max connections per host: 30

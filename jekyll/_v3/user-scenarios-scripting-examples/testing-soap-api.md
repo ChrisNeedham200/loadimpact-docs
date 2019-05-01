@@ -41,7 +41,7 @@ end
 
 local doc = xml.parse(response.body)
 -- same content than
---local doc = xml.parse("<?xml version=\"1.0\"><books><book><author>Load Impact</author><title>Load testing with XML</title></book></books></xml>")
+--local doc = xml.parse("<?xml version=\"1.0\"><books><book><author>LoadImpact</author><title>Load testing with XML</title></book></books></xml>")
 
 
 -- Print title of first matched book

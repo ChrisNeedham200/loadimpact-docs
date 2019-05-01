@@ -12,7 +12,7 @@ redirect_from:
 
 <h2>Purpose</h2>
 
-An overview of some key differences between Load Impact 3.0 and 4.0.
+An overview of some key differences between LoadImpact 3.0 and 4.0.
 
 ***
 

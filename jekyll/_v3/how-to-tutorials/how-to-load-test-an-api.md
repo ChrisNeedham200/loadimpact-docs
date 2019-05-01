@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: How to Load Test an API
-description: Useable code sample to load test APIs with Load Impact. Simply put your endpoint in. This will make 25 rps per VU until the test is over.
+description: Useable code sample to load test APIs with LoadImpact. Simply put your endpoint in. This will make 25 rps per VU until the test is over.
 categories: [how-to-tutorials]
 order: 1
 redirect_from:
@@ -17,11 +17,11 @@ When testing a web site or application, you often want to know how many visitors
 
 However, when testing an API, it is more common to want to know the scalability of your system by measuring the throughput in terms of requests per second, RPS. In the same way that the number of visitors or VUs is an interesting concept and metric when talking about websites, requests per second or RPS is an interesting metric for understanding the throughput of an API.
 
-In the current version of Load Impact, sizing of load tests are determined by VUs. Converting the scale or size of a load test from VUs to RPS depends on a number of factors
+In the current version of LoadImpact, sizing of load tests are determined by VUs. Converting the scale or size of a load test from VUs to RPS depends on a number of factors
 
 - Response times - depends on system response times, network latency, etc.
 - Complexity of processing logic of load testing script - e.g. are we hammering a simple API with GET-requests, or looking to exercise a system using some more sophisticated logic involving client-side processing and computation?
-- VU concurrency and infrastructure processing overhead - Load Impact provisions load generator instances based on sizing of test, where up to 500 concurrent VUs on each instance are instantiated with instructions to run specific load testing scripts. In the default setting, Load Impact also allows each VU to keep 4 active concurrent TCP connections.
+- VU concurrency and infrastructure processing overhead - LoadImpact provisions load generator instances based on sizing of test, where up to 500 concurrent VUs on each instance are instantiated with instructions to run specific load testing scripts. In the default setting, LoadImpact also allows each VU to keep 4 active concurrent TCP connections.
 
 The below sample script generates throughput towards the system under test at 25 RPS/VU:
 
@@ -34,7 +34,7 @@ The below sample script generates throughput towards the system under test at 25
 -- What URL are we looking to hit in this test
 local url = "http://109.228.153.2/style.css"
 
--- For controlled RPS/VU testing where Load Impact runs up to 500 VUs per
+-- For controlled RPS/VU testing where LoadImpact runs up to 500 VUs per
 -- load generator instance, we have found 25 RPS/vu to scale linearly
 local requestsPerSecond = 25
 
@@ -99,7 +99,7 @@ end
 - There are a few possible configurations or customizations to the script that may or may not apply depending on the characteristics of the system under test - e.g. changing concurrent TCP connections per VU.
 - When following this pattern, the VU Load Time is likely a meaningless metric, and it is not reported until the end of the user scenario execution. Checkout this article for more information.
 - This script generates a [custom metric]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/creating-custom-metrics/) `sleep_time` that you can use for understanding the behavior of your testing
-- Below is an example chart showing how Load Impact would report a 500VU/11m run of the above sample script:
+- Below is an example chart showing how LoadImpact would report a 500VU/11m run of the above sample script:
 
 ![Example API Test Result]( {{ site.baseurl }}/assets/img/v3/how-to-tutorials/how-to-load-test-an-api/api-test-result.png)
 

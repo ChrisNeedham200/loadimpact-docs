@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Integrating other Monitoring products into Load Impact
-description: While we do not have official integrations with other monitoring tools, it is possible, with some effort, to pull them into Load Impact for analysis. We provide this example, using AppDynamics
+title: Integrating other Monitoring products into LoadImpact
+description: While we do not have official integrations with other monitoring tools, it is possible, with some effort, to pull them into LoadImpact for analysis. We provide this example, using AppDynamics
 categories: [monitoring-agents]
 order: 3
 redirect_from: /knowledgebase/articles/801591-how-to-get-your-appdynamics-metrics-into-load-impa
@@ -9,13 +9,13 @@ redirect_from: /knowledgebase/articles/801591-how-to-get-your-appdynamics-metric
 
 ***
 
-While the only official integration we currently have is with New Relic, it is possible to pull metrics from other tools, via our open source agents, into Load Impact for analysis.
+While the only official integration we currently have is with New Relic, it is possible to pull metrics from other tools, via our open source agents, into LoadImpact for analysis.
 
-How to get your AppDynamics metrics into Load Impact test results
+How to get your AppDynamics metrics into LoadImpact test results
 
 
 
-This example shows how to get a single CPU metric into Load Impact test results using the Load Impact Server Metrics Agent.
+This example shows how to get a single CPU metric into LoadImpact test results using the LoadImpact Server Metrics Agent.
 
 
 
@@ -23,7 +23,7 @@ Assumption: You have your AppDynamics agents set up, configured and running.
 
 
 
-1. Get your Load Impact Server Monitoring Agent and install it on your server.
+1. Get your LoadImpact Server Monitoring Agent and install it on your server.
   - See this Knowledge Base Article if this is not already set up
 
 
@@ -33,7 +33,7 @@ Assumption: You have your AppDynamics agents set up, configured and running.
   -For our example collecting our CPU metric it’s `https://loadimpact.saas.appdynamics.com/controller/rest/applications/GSSTO002/metric-data?metric-path=Application%20Infrastructure%20Performance%7CMachine%20Agent%7CHardware%20Resources%7CCPU%7C%25Busy&time-range-type=BEFORE_NOW&duration-in-mins=1`
 
 
-3. Assuming you have installed your Load Impact Server Metrics Agent on a windows box, create a powershell script containing this (named appdynamics_cpu.ps1):
+3. Assuming you have installed your LoadImpact Server Metrics Agent on a windows box, create a powershell script containing this (named appdynamics_cpu.ps1):
 
 
         $user = "myppadynamicsuser@myappdynamicsaccount"
@@ -53,7 +53,7 @@ Assumption: You have your AppDynamics agents set up, configured and running.
         powershell -noprofile -ExecutionPolicy Bypass -f "c:\Server Metrics Agent\appdynamics_cpu.ps1"
         EXIT /B 0
 
-5. Now to the interesting part, how to get that into Load Impact!
+5. Now to the interesting part, how to get that into LoadImpact!
   - Open the li_metrics_agent.conf file located in your server metrics agent install folder. On a windows box that typically is c:\server metrics agent\.
   - Find the section that starts with:
 ```
@@ -68,7 +68,7 @@ Assumption: You have your AppDynamics agents set up, configured and running.
         [test5]
         command = "c:/Server Metrics Agent/appdynamics.cmd"
 ```
-  - Save, and recycle your server metrics agent service (it’s aptly named Load Impact Server Metrics Agent Service) to pick up the configuration changes.
+  - Save, and recycle your server metrics agent service (it’s aptly named LoadImpact Server Metrics Agent Service) to pick up the configuration changes.
 
 
 
@@ -80,7 +80,7 @@ Assumption: You have your AppDynamics agents set up, configured and running.
 
 
 
-And for those of you not deploying the Load Impact Server Metrics Agent on windows but rather on a *nix this shell script (named appdynamics.sh in this example) will output the same thing as the cmdfile/powershell combo on windows (it uses curl to call the REST API, get here if you don’t have it http://curl.haxx.se/):
+And for those of you not deploying the LoadImpact Server Metrics Agent on windows but rather on a *nix this shell script (named appdynamics.sh in this example) will output the same thing as the cmdfile/powershell combo on windows (it uses curl to call the REST API, get here if you don’t have it http://curl.haxx.se/):
 
 
 

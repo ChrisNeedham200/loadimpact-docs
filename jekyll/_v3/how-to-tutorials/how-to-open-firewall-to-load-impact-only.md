@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to open your firewall to Load Impact only
-description: Methods to open your firewall to Load Impact traffic for testing purposes
+title: How to open your firewall to LoadImpact only
+description: Methods to open your firewall to LoadImpact traffic for testing purposes
 categories: [how-to-tutorials]
 order: 6
 redirect_from: /knowledgebase/articles/377327-how-can-i-open-my-firewall-to-load-impact-traffic
@@ -10,7 +10,7 @@ redirect_from: /knowledgebase/articles/377327-how-can-i-open-my-firewall-to-load
 ***
 
 
-To open your firewall to Load Impact traffic, you have multiple options. Depending on your business needs, one may be a better fit than another.
+To open your firewall to LoadImpact traffic, you have multiple options. Depending on your business needs, one may be a better fit than another.
 
 
 1. Open up your firewall to the whole range of AWS IP addresses used by the load zones where you want to run your load test from. To use AWS to generate traffic, you will have to open up your firewall to a large IP range.
@@ -46,7 +46,7 @@ http.request_batch({
   {"GET", "http://test.loadimpact.com/?firewall_token=TOKEN_STRING" }
 }
 {% endhighlight %}
-Another option could be to request content from a certain hostname that is not in the DNS, but your site would of course need to be configured to respond to requests for that hostname. This is how you do it on the Load Impact side:
+Another option could be to request content from a certain hostname that is not in the DNS, but your site would of course need to be configured to respond to requests for that hostname. This is how you do it on the LoadImpact side:
 {% highlight lua linenos %}
 -- Map a secret hostname to the IP of our server (need to do this if the hostname is not in the public DNS)
 util.dns_remap('very_difficult.to.guess.hostname.com', '44.55.66.77')

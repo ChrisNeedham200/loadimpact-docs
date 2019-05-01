@@ -39,6 +39,6 @@ client.sleep(5)
 
 See also:
 
-- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [The LoadImpact load script API](https://loadimpact.com/load-script-api)
 - [Built in module: client.sleep()](https://loadimpact.com/load-script-api#client-sleep)
 - [Lua standard Library: math.random() ](http://www.lua.org/manual/5.1/manual.html#pdf-math.random)

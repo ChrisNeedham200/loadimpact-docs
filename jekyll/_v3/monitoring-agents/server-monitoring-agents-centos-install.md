@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/1094101-how-to-install-server-monitoring-
 
 ***
 
-Load Impact distributes .deb and .rpm packages for Linux systems and a Windows installation package. Linux packages are distributed by the [packagecloud.io service](https://packagecloud.io/loadimpact/server-metrics-agent). Linux installation requires Python v2.6 or v2.7 installed on your server.
+LoadImpact distributes .deb and .rpm packages for Linux systems and a Windows installation package. Linux packages are distributed by the [packagecloud.io service](https://packagecloud.io/loadimpact/server-metrics-agent). Linux installation requires Python v2.6 or v2.7 installed on your server.
 
 Install the **psutil** dependency
 ```
@@ -25,11 +25,11 @@ Install last version of the package
 ```
 sudo yum install li-metrics-agent
 ```
-Run the configuration tool. You will be asked to give the agent a name and your server metrics token. The name is used for identification in the Load Impact application so it is recommended to choose a short readable name. The name and token will be written to the `config-file`. You can read about advanced configuration of Nagios and custom metrics plugins here.
+Run the configuration tool. You will be asked to give the agent a name and your server metrics token. The name is used for identification in the LoadImpact application so it is recommended to choose a short readable name. The name and token will be written to the `config-file`. You can read about advanced configuration of Nagios and custom metrics plugins here.
 ```
 $ sudo li-metrics-agent-config
 ```
-You can also click the "Check installation" button on the monitoring tab within Load Impact. If a new entry appears in the list then the agent has been successfully installed.
+You can also click the "Check installation" button on the monitoring tab within LoadImpact. If a new entry appears in the list then the agent has been successfully installed.
 
 
 

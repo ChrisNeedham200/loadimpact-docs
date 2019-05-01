@@ -18,7 +18,7 @@ This guide and sample describes how to integrate LoadImpact 4.0 with CircleCI. Y
 
 ## Background
 
-LoadImpact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the continuous integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
+LoadImpact believes in goal oriented and automated load testing. That's why we built k6 to work well in these environments, integrating nicely with services like CircleCI, the Continuous Integration and delivery platform. This enables you to automatically run tests against your websites, APIs, microservices, web apps, or anything else you may want to monitor for performance regressions over time.
 
 It's highly advised to utilize thresholds in automated tests, so you can pass or fail your builds based on the outcome of your performance test. Refer to [this article]({{ site.baseurl }}/4.0/core-concepts/thresholds/) for more information on thresholds.
 

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: What is Data Retention?
-description: Explanation of Load Impact's Data Retention plan
+description: Explanation of LoadImpact's Data Retention plan
 categories: [pricing]
 order: 2
 redirect_from: /knowledgebase/articles/578331-how-does-the-data-retention-subscription-work

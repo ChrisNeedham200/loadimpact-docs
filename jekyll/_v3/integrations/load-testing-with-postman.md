@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Load Testing with Postman
-description: Guide on how to create load tests in Load Impact from your Postman collections
+description: Guide on how to create load tests in LoadImpact from your Postman collections
 categories: [integrations]
 order: 2
 redirect_from: /knowledgebase/articles/894636-load-testing-with-postman
@@ -11,20 +11,20 @@ redirect_from: /knowledgebase/articles/894636-load-testing-with-postman
 
 ## Background
 
-[Postman](https://www.getpostman.com/) is one of the best-in-market tools for functional testing of APIs. Postman makes it easy for you to develop, document, and test your APIs. But what about when you want to test those APIs beyond single requests. That is where the Load Impact Postman converter can help.
+[Postman](https://www.getpostman.com/) is one of the best-in-market tools for functional testing of APIs. Postman makes it easy for you to develop, document, and test your APIs. But what about when you want to test those APIs beyond single requests. That is where the LoadImpact Postman converter can help.
 
-The **Postman to Load Impact converter** allows you to utilize your Postman collections as load tests on the Load Impact platform. Specifically, you can convert them to either a Lua(Load Impact 3.0) based or JavaScript(Load Impact 4.0) based script for use with the Load Impact platform. You can then execute these scripts within the context of a load test, where you decide how many virtual users, length of test, and ramping profile.
+The **Postman to LoadImpact converter** allows you to utilize your Postman collections as load tests on the LoadImpact platform. Specifically, you can convert them to either a Lua(LoadImpact 3.0) based or JavaScript(LoadImpact 4.0) based script for use with the LoadImpact platform. You can then execute these scripts within the context of a load test, where you decide how many virtual users, length of test, and ramping profile.
 
-Note: this article is about Load Impact 3.0. If you are looking for Load Impact 4.0, [click here]({{ site.baseurl }}/4.0/how-to-tutorials/load-testing-with-postman-collections/)
+Note: this article is about LoadImpact 3.0. If you are looking for LoadImpact 4.0, [click here]({{ site.baseurl }}/4.0/how-to-tutorials/load-testing-with-postman-collections/)
 
 ## How to use the converter
 
-Note: Please be sure to sign up for a free [Load Impact account!](https://app.loadimpact.com/account/register)
+Note: Please be sure to sign up for a free [LoadImpact account!](https://app.loadimpact.com/account/register)
 
 
 1 - Install the Command Line Tool.
 
-  Load Impact provides CLI tools to convert your Postman tests to both versions of our platform:
+  LoadImpact provides CLI tools to convert your Postman tests to both versions of our platform:
 
   - [Postman to Lua converter](https://github.com/loadimpact/postman-to-loadimpact#installation-and-usage)
   - [Postman to k6/JavaScript converter](https://github.com/loadimpact/postman-to-k6#installation-and-usage)
@@ -39,7 +39,7 @@ Note: Please be sure to sign up for a free [Load Impact account!](https://app.lo
   `postman-to-loadimpact path/my-collection.json -o path/my-collection.lua`
   `postman-to-k6 path/my-collection.json -o path/k6-script.js`
 
-4 - _Only LUA tests/scripts:_ Copy the content of the command output into a new or existing user scenario in Load Impact.
+4 - _Only LUA tests/scripts:_ Copy the content of the command output into a new or existing user scenario in LoadImpact.
 
 5 - Based on your script, you may need to do some additional scripting for it to validate. Here are common cases:
 

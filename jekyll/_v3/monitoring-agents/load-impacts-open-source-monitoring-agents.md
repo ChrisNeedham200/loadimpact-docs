@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Load Impact's Open Source Server Monitoring Agents
-description: How to install Load Impact's open source Server Monitoring Agents to add more data and context to your load tests.
+title: LoadImpact's Open Source Server Monitoring Agents
+description: How to install LoadImpact's open source Server Monitoring Agents to add more data and context to your load tests.
 categories: [monitoring-agents]
 order: 1
 redirect_from:
@@ -12,9 +12,9 @@ redirect_from:
 
 ***
 
-Server Monitoring helps you to measure performance metrics from your own servers and integrates these metrics with the graphs generated from your Load Impact test.
+Server Monitoring helps you to measure performance metrics from your own servers and integrates these metrics with the graphs generated from your LoadImpact test.
 
-Load Impact offers three options to monitor a system under test(SUT).
+LoadImpact offers three options to monitor a system under test(SUT).
 
 You can use:
 
@@ -52,7 +52,7 @@ Below the packages, you can also generate your token:
 ![Token generation]({{ site.baseurl }}/assets/img/v3/monitoring-agents/load-impacts-open-source-monitoring-agents/monitoring-agent-token-generation.png)
 
 
-You will use the **same token** for all Load Impact Monitoring Agents. You can re-generate a new token at any time if you believe it has been compromised or distributed to someone outside your company. Upon re-generation, the old token is no longer valid.
+You will use the **same token** for all LoadImpact Monitoring Agents. You can re-generate a new token at any time if you believe it has been compromised or distributed to someone outside your company. Upon re-generation, the old token is no longer valid.
 
 ### Step 3: Name your agents and give them access
 
@@ -60,7 +60,7 @@ During the installation of the server monitoring agent you will be asked to prov
 
 If you are using the python files to install your agent, please read [README.md](https://github.com/loadimpact/loadimpact-server-metrics/blob/master/README.md). You will need to set the name and token within the config file. Using our provided template, this can be found on lines 1-8 of li_metrics_agent.conf:
 ```
-# Load Impact Server Metrics sample configuration file
+# LoadImpact Server Metrics sample configuration file
 
 [General]
 # agent_name - hostname or any other identifier for this server, choose wisely
@@ -74,7 +74,7 @@ _To ensure that the agents can connect, please allow outgoing port 443 against a
 
 ### Step 4: Wait for check-in
 
-Once installed, click "Check installation" within Load Impact. We will see if your agent has started communication with us.
+Once installed, click "Check installation" within LoadImpact. We will see if your agent has started communication with us.
 
 ![Check Install]({{ site.baseurl }}/assets/img/v3/monitoring-agents/load-impacts-open-source-monitoring-agents/check-install.png)
 
@@ -96,11 +96,11 @@ Once your test has started, you will be able to see your Server Monitoring resul
 
 ### FAQs
 
-#### How do the Server Monitoring Agents communicate with Load Impact?
+#### How do the Server Monitoring Agents communicate with LoadImpact?
 
-Load Impact servers never contact the server monitoring agents. It is the other way around - the agents contact Load Impact regularly. Since most firewalls allow outgoing HTTP connections, this generally ensures that the data can be sent to our servers. If you have outgoing firewall rules, please allow outgoing **port 443 against api.loadimpact.com** in your firewall.
+LoadImpact servers never contact the server monitoring agents. It is the other way around - the agents contact LoadImpact regularly. Since most firewalls allow outgoing HTTP connections, this generally ensures that the data can be sent to our servers. If you have outgoing firewall rules, please allow outgoing **port 443 against api.loadimpact.com** in your firewall.
 
-The agents contact Load Impact every few minutes. If our system sees you are logged in to your Load Impact account we will tell the agents to start contacting us a little more frequently. This is to minimize the waiting time for tests to start with monitoring agents.
+The agents contact LoadImpact every few minutes. If our system sees you are logged in to your LoadImpact account we will tell the agents to start contacting us a little more frequently. This is to minimize the waiting time for tests to start with monitoring agents.
 
 When a test is started with an agent configured, we will wait for that agent to contact us as described above. When it does - by sending us an HTTP request - we will respond to the agent to begin collecting data and sending it to us. This is considered active mode - collecting data and transmitting it to us continuously throughout the load test (using HTTP). When the test is complete, we will tell the agent to stop collecting data. When you logout from loadimpact.com, we will also tell the agent to contact us less frequently.
 

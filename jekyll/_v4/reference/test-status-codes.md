@@ -47,7 +47,7 @@ A test which has not received or sent any information for a long time
 A test which was aborted by the user.  Tests aborted by user count against your total usage.
 
 ### Aborted (by system)
-A test that was aborted by the system.  These tests typically abort due to a fatal error occuring.  If the test fails before launch, there may be an underlying issue with the Load Zone, unrelated to Load Impact.  If the test aborts during execution, it may be due to overutilization of the Load Generators.  In this case, we suggest you look at the CPU and Memory utilization and add or increase sleep times. You may also want to set the option `discardRepsonseBodies` to `true`, to lower memory pressure.
+A test that was aborted by the system.  These tests typically abort due to a fatal error occuring.  If the test fails before launch, there may be an underlying issue with the Load Zone, unrelated to LoadImpact.  If the test aborts during execution, it may be due to overutilization of the Load Generators.  In this case, we suggest you look at the CPU and Memory utilization and add or increase sleep times. You may also want to set the option `discardRepsonseBodies` to `true`, to lower memory pressure.
 
 ### Aborted (script error)
 A test that was aborted due to an error in your script. For example, if you were to capture data from the response body of a request that you reuse in a future request.  If the first request were to fail, your future request would contain a null value. Sudden script errors can suggest a performance issue.  Fix the performance issue or add error handling to account for these cases.

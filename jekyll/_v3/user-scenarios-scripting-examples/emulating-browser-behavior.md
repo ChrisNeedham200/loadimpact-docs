@@ -15,7 +15,7 @@ When a browser loads a HTML page it usually requests a whole series of resources
 
 Modern browsers load all these resources asynchronuously, using multiple network connections over which they issue several requests in parallel. This gets the whole web page loaded faster, and also puts a lot of extra stress on the web server, which has to deliver a lot of different resources in a short amount of time, across several network connections. If you want your load test to be realistic, you should try and make sure that your simulated clients emulate this browser behaviour as closely as possible. **If you have used the [Chrome extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension/) to record your user scenario, you will notice that most requests are already in batches.**
 
-You can use `http.request()` (or its wrappers, `http.get()` and `http.post()`) to issue a blocking HTTP request call that will load only a single resource, but if you want to take advantage of the ability of the Load Impact load generator to load multiple resources at once, across multiple network connections, you should use `http.request_batch()` to issue multiple request in parallel.
+You can use `http.request()` (or its wrappers, `http.get()` and `http.post()`) to issue a blocking HTTP request call that will load only a single resource, but if you want to take advantage of the ability of the LoadImpact load generator to load multiple resources at once, across multiple network connections, you should use `http.request_batch()` to issue multiple request in parallel.
 
 Here is an example that shows a load script that loads all the content on the page `http://test.loadimpact.com/` in a way that emulates a modern browser:
 {% highlight lua linenos %}

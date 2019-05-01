@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/ionicons@4.1.2/dist/css/ionicons.min.css">
 	<link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-	<title>{% if page.title %}{{ page.title | escape }} - Load Impact{% else %}{{ site.title | escape }} - Load Impact{% endif %}</title>
+	<title>{% if page.title %}{{ page.title | escape }} - LoadImpact{% else %}{{ site.title | escape }} - LoadImpact{% endif %}</title>
 
 	<!-- Start of Async Drift Code -->
 	<script>
@@ -56,22 +56,22 @@
 		<div class="article-container docs">
 			{% include breadcrumb.html %}
 			<form id="site-search" class="doc-search" action="">
-				<input id="li-search" name="search" type="search" placeholder="Search Load Impact {% if page.collection == 'v3' %}3.0 {% elsif page.collection == 'v4' %}4.0 {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
+				<input id="li-search" name="search" type="search" placeholder="Search LoadImpact {% if page.collection == 'v3' %}3.0 {% elsif page.collection == 'v4' %}4.0 {% elsif page.collection == 'api' %}API {% else %}{% endif %}docs" class="form-control" />
 			</form>
 
 			{% if page.collection == 'v3' %}
 				<!--Chrome Extension -->
 				{% if page.url == '/3.0/user-scenarios/load-impact-chrome-extension/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This documentation is for the Chrome extension that works with Load Impact v3.0</b><br>
+						<b>WARNING: This documentation is for the Chrome extension that works with LoadImpact v3.0</b><br>
 						You can find the documentation for the Chrome extension that works with v4.0,
 						<a href="{{ site.baseurl }}/4.0/guides/load-impact-version-4-chrome-extension/"> here</a>.
 					</div>
 					<!-- How to Load test an API -->
 					{% elsif page.url == '/3.0/how-to-tutorials/how-to-load-test-an-api/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for testing APIs in v3.0 of Load Impact</b><br>
-						For documentation on testing APIs in Load Impact v4.0 with k6, please see the following articles:
+						<b>WARNING: This guide is for testing APIs in v3.0 of LoadImpact</b><br>
+						For documentation on testing APIs in LoadImpact v4.0 with k6, please see the following articles:
 						<br>
 						 <ul>
 							 <li><a href="{{ site.baseurl }}/4.0/guides/how-to-load-test-an-api-with-k6/">
@@ -83,7 +83,7 @@
 					<!--Test configuration-->
 					{% elsif page.url == '/3.0/test-configuration/what-is-a-test-configuration/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for configuring tests in v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for configuring tests in v3.0 of LoadImpact</b><br>
 						In v4.0, test configuration is expressed as code. If you are a v4.0/k6 user please refer to
 						our documentation on <a href="{{ site.baseurl }}/4.0/reference/test-configuration-options/">
 							v4.0 test configuration options</a>
@@ -91,7 +91,7 @@
 					<!--Thresholds-->
 					{% elsif page.url == '/3.0/test-configuration/thresholds/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for configuring Thresholds v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for configuring Thresholds v3.0 of LoadImpact</b><br>
 						In v4.0, thresholds received upgraded capabilities and are now expressed as JavaScript code.
 						If you are a v4.0/k6 user please refer to the v4.0 documentation on
 						<a href="{{ site.baseurl }}/4.0/core-concepts/thresholds/">Thresholds.</a>
@@ -99,21 +99,21 @@
 					<!--Scheduling-->
 					{% elsif page.url == '/3.0/test-configuration/scheduling-tests/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for scheduling tests v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for scheduling tests v3.0 of LoadImpact</b><br>
 						If you are a v4.0/k6 user please refer to the v4.0 documentation on
 						<a href="{{ site.baseurl }}/4.0/guides/test-scheduling/">scheduling.</a>
 					</div>
 					<!--Automating Load Tests-->
 					{% elsif page.url == '/3.0/integrations/automating-load-testing/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for automating load testing in v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for automating load testing in v3.0 of LoadImpact</b><br>
 						If you are a v4.0/k6 user and are looking to integrating with a CI tool such as Azure Devops, Jenkins, etc.
 						Please refer to <a href="{{ site.baseurl }}/4.0/integrations/">our integration guides.</a>
 					</div>
 					<!-- Custom Metrics-->
 					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/creating-custom-metrics/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for creating Custom Metrics in v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for creating Custom Metrics in v3.0 of LoadImpact</b><br>
 						In v4.0, Custom Metrics received upgraded capabilities and are now expressed as JavaScript code.
 						If you are a v4.0/k6 user please refer to our documentation on creating
 						<a href="{{ site.baseurl }}/4.0/core-concepts/custom-metrics/">Custom Metrics.</a>
@@ -121,16 +121,16 @@
 					<!-- Quick Start Guide-->
 					{% elsif page.url contains '/3.0/quick-start-guide/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This Quick Start Guide is for Load Impact v3.0!</b><br>
+						<b>WARNING: This Quick Start Guide is for LoadImpact v3.0!</b><br>
 						If you are a v4.0/k6 user, this is not the right guide! Please refer to our
 						<a href="{{ site.baseurl }}/4.0/getting-started/">v4.0 Getting Started documentation. </a>
-						Load Impact v4.0, enables your scripts to be written in JavaScript, upgraded result analysis
+						LoadImpact v4.0, enables your scripts to be written in JavaScript, upgraded result analysis
 						(including Smart Results performance algorithms), and other enhancements.
 					</div>
 					<!-- Perf Trending-->
 					{% elsif page.url == '/3.0/test-results/interpreting-the-performance-trending-graph/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for v3.0 of LoadImpact</b><br>
 						If you are a v4.0/k6 user please refer to
 						<a href="{{ site.baseurl }}/4.0/guides/how-to-interpret-performance-trending/">Custom Metrics.</a>
 					</div>
@@ -138,37 +138,37 @@
 					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/random-data-from-data-store/'
 					or page.url == '/3.0/user-scenarios-scripting-examples/data-stores/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This guide is for parameterizing data in v3.0 of Load Impact</b><br>
+						<b>WARNING: This guide is for parameterizing data in v3.0 of LoadImpact</b><br>
 						Parameterization of data is possible in v4.0, however the process is different than v3.0. Please refer to
 						<a href="{{ site.baseurl }}/4.0/examples/parameterizing-data/">our parameterization examples here.</a>
 					</div>
 					<!-- Login auth examples-->
 					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/login-examples/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This article provides examples for v3.0 of Load Impact</b><br>
+						<b>WARNING: This article provides examples for v3.0 of LoadImpact</b><br>
 						The code samples provided below are in Lua. If you are a v4.0/k6 user, please refer to our examples of
 						<a href="{{ site.baseurl }}/4.0/examples/authentication-authorization-load-testing/">Authentication/Authorization.</a>
 					</div>
 					<!-- title-->
 					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/how-are-cookies-handled/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This article provides examples for cookie handling in v3.0 of Load Impact</b><br>
+						<b>WARNING: This article provides examples for cookie handling in v3.0 of LoadImpact</b><br>
 						The code samples provided below are in Lua. If you are a v4.0/k6 user, please refer to our examples of
 						<a href="{{ site.baseurl }}/4.0/examples/cookies/">handling cookies.</a>
 					</div>
 					<!--File uploads-->
 					{% elsif page.url == '/3.0/user-scenarios-scripting-examples/testing-a-file-upload/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This article provides examples for testing uploads in v3.0 of Load Impact</b><br>
+						<b>WARNING: This article provides examples for testing uploads in v3.0 of LoadImpact</b><br>
 						The ability to test file uploads has been greatly simplified in v4.0 as k6 can handle sending external
-						files directly to the Load Impact Cloud.  For more information on testing user journeys with file uploads
+						files directly to the LoadImpact Cloud.  For more information on testing user journeys with file uploads
 						refer to our
 						<a href="{{ site.baseurl }}/4.0/examples/data-upload-load-test/">file upload code samples.</a>
 					</div>
 					<!-- Interpreting results-->
 					{% elsif page.url == '/3.0/test-results/how-do-i-interpret-results/' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This article discusses interpreting results in v3.0 of Load Impact</b><br>
+						<b>WARNING: This article discusses interpreting results in v3.0 of LoadImpact</b><br>
 						While similar concepts apply, we've upgraded the results analysis screen in v4.0 to be more error driven.
 						We also have introduced Performance Alerts for detecting performance issues. Please refer to our section on
 						<a href="{{ site.baseurl }}/4.0/result-analysis/">v4.0 result analysis.</a>
@@ -176,8 +176,8 @@
 					<!-- Testing a site that requires login-->
 					{% elsif page.url == '/3.0/how-to-tutorials/testing-a-site-that-requires-login' %}
 					<div class="callout callout-warning" role="alert">
-						<b>WARNING: This article provides authentication examples in Lua for v3.0 of Load Impact</b><br>
-						If you are using JavaScript in v4.0 of Load Impact please refer to our
+						<b>WARNING: This article provides authentication examples in Lua for v3.0 of LoadImpact</b><br>
+						If you are using JavaScript in v4.0 of LoadImpact please refer to our
 						<a href="{{ site.baseurl }}/4.0/examples/authentication-authorization-load-testing/">authentication and authorization examples.</a>
 					</div>
 					<!-- v3.0 Postman-->
@@ -186,14 +186,14 @@
 						<b>ATTENTION: This article refers to an older version of LoadImpact and our Postman converter</b><br>
 						<br>
 						Significant improvements and updates are available in the latest version of our Postman converter, please refer to
-						<a href="{{ site.baseurl }}/4.0/guides/load-testing-postman-collections/">load testing Postman collections in Load Impact v4.0</a>
+						<a href="{{ site.baseurl }}/4.0/guides/load-testing-postman-collections/">load testing Postman collections in LoadImpact v4.0</a>
 					</div>
 					<!-- title-->
 
 				{% else %}
 					<div class="callout callout-warning" role="alert">
-						<b>Attention! This article is about Load Impact v3.0</b><br>
-						You're viewing documentation for v3.0 of Load Impact. You'll find docs for the latest version of of our product, v4.0, <a href="{{ site.baseurl }}/4.0/">here</a>.
+						<b>Attention! This article is about LoadImpact v3.0</b><br>
+						You're viewing documentation for v3.0 of LoadImpact. You'll find docs for the latest version of of our product, v4.0, <a href="{{ site.baseurl }}/4.0/">here</a>.
 						We plan to deprecate v3.0 in the future and encourage users to check out v4.0 and start transitioning. Please
 						<a href="mailto:support@loadimpact.com?Subject=Questions%20about%20v3.0%20deprecation%20and%20v4.0%20transition&Body=I%20saw%20the%20alert%20in%20your%20knowledge%20base%20and%20had%20a%20question%20about..." target="_top">
 							contact us </a>with any questions, comments, or concerns.

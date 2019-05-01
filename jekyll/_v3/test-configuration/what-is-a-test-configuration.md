@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Test Configuration
-description: In depth guide on what a test configuation is and how to use it in Load Impact 3.0
+description: In depth guide on what a test configuation is and how to use it in LoadImpact 3.0
 categories: [test-configuration]
 order: 1
 redirect_from:
@@ -62,7 +62,7 @@ Finally, we also have three optional configuration options for you to use:
 
 **Thresholds** - Allow you to set a binary pass/fail criteria that can also automatically abort the test
 
-**Server Monitoring Agents** - Using either our Open Source Agents or our integration with New Relic you are able to report back on various server side metrics for correlation in your test results in Load Impact
+**Server Monitoring Agents** - Using either our Open Source Agents or our integration with New Relic you are able to report back on various server side metrics for correlation in your test results in LoadImpact
 
 **URL Grouping** - Recommended for tests against systems that generate unique identifiers in the URL. This allows you to group similar URLs together and stay organized when analyzing results.
 

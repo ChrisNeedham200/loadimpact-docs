@@ -1,7 +1,7 @@
-# Load Impact 3.0 Docs
+# LoadImpact 3.0 Docs
 
 # REQUIRED
-# Load Impact Version 3 docs
+# LoadImpact Version 3 docs
 # corresponds to Jekyll collection
 #- section: v3
   # REQUIRED
@@ -60,7 +60,7 @@
   slug: pricing
   name: Pricing
 
-# Load Impact Next Gen Docs
+# LoadImpact Next Gen Docs
 
 # New category
 
@@ -150,7 +150,7 @@
 #  name: Pricing
 
 
-# Load Impact API Docs
+# LoadImpact API Docs
 - section: api
   slug: reference
   name: API Reference

@@ -15,7 +15,7 @@ There are testing scenarios in which your VUs end up reporting a large number of
 - Turns off re-sorting tables
 - Turns off time interval filtering
 
-A common reason why such a large number of URLs are reported is that the Load Impact platform identifies and treats every unique URL as a different URL. For example, the same URL with different query string parameters reports as two URLs:
+A common reason why such a large number of URLs are reported is that the LoadImpact platform identifies and treats every unique URL as a different URL. For example, the same URL with different query string parameters reports as two URLs:
 
 
 `https://sso.login.com/login?jsessionid=ABC`

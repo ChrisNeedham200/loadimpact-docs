@@ -28,7 +28,7 @@ The _**Submit a URL for a quick scenario**_ field will make the system load the 
 
 The **Chrome Extension _(Most users utilize this option)_** button will allow you to record yourself browsing like a user would to generate a user scenario. You will be able to browse around on your site, loading multiple pages. This will create a load script that contains all the HTTP transactions that were executed by your own browser while you were browsing, mimicking your behavior exactly (including pauses in between page loads).
 
-The **Proxy session button** will make Load Impact launch a HTTP proxy server, allowing you to configure your web browser so that it uses this proxy server to access the web. It works similiar to the Chrome extension.
+The **Proxy session button** will make LoadImpact launch a HTTP proxy server, allowing you to configure your web browser so that it uses this proxy server to access the web. It works similiar to the Chrome extension.
 
 **Tip**: A basic load test is better than no load test. If you are unsure of where to start use the URL generator so you can set some baseline performance metrics.
 

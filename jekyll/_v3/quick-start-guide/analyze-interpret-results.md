@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Analyze and Interpreting your results
-description: Brief guide on interpreting your load or performance test results in Load Impact.
+description: Brief guide on interpreting your load or performance test results in LoadImpact.
 categories: [quick-start-guide]
 order: 4
 ---

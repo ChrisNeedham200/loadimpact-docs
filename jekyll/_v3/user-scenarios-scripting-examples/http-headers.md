@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Reading and setting HTTP headers
-description: How to Set and read HTTP headers in Load Impact
+description: How to Set and read HTTP headers in LoadImpact
 categories: [user-scenario-scripting-examples]
 order: 4
 redirect_from: /knowledgebase/articles/835719-http-headers
@@ -55,5 +55,5 @@ In the example we assume that you do know the exact page modification date.
 
 See also:
 
-- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [The LoadImpact load script API](https://loadimpact.com/load-script-api)
 - [If-Modified-Since header](http://en.wikipedia.org/wiki/List_of_HTTP_headers)

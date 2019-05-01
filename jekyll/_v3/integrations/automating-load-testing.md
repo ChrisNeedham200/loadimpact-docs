@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Automating Load Tests with the Load Impact API
-description: Methods on how to automatically trigger load tests utilizing Load Impact's API or CLI
+title: Automating Load Tests with the LoadImpact API
+description: Methods on how to automatically trigger load tests utilizing LoadImpact's API or CLI
 categories: [integrations]
 order: 1
 redirect_from:
@@ -37,24 +37,24 @@ Your test ID can be found by navigating to your desired test and grabbing the th
 
 ### B. Using our Developer API
 
-[Load Impact provides an API](http://developers.loadimpact.com/api/) that other applications can use to access the Load Impact platform.
+[LoadImpact provides an API](http://developers.loadimpact.com/api/) that other applications can use to access the LoadImpact platform.
 To get access to the API (version 2) you need an API token.
 
-Your API token provides access to your Load Impact account, so do not make it public and be careful with whom you share it.
+Your API token provides access to your LoadImpact account, so do not make it public and be careful with whom you share it.
 If you have an existing API token you can deactivate it by generating a new one.
 
 Each token for the API (version 2) is unique to a user and organization and is restricted based on organization roles as follows:
 - Owner or Admin members can manage API tokens.
 - Read/Write members can not access API tokens.
 
-You will need to use an API token (version 2) when using the [Load Impact API ](http://developers.loadimpact.com/api/)to programmatically manage your user scenarios, test configurations and test runs.
+You will need to use an API token (version 2) when using the [LoadImpact API ](http://developers.loadimpact.com/api/)to programmatically manage your user scenarios, test configurations and test runs.
 
 `$ curl -X POST https://api.loadimpact.com/v2/test-configs/X/start -u "API_TOKEN:" {"id": TEST_RUN_ID_OF_STARTED_TEST}`
 
-The Load Impact API is commonly used when you need to automate your load testing efforts by integrating with
+The LoadImpact API is commonly used when you need to automate your load testing efforts by integrating with
 your **Continuous Integration & Deployment** process to detect problems and performance regressions early in the development cycle.
 
-Load Impact can be [integrated](https://loadimpact.com/integrations/) with different services using our [SDKs](http://developers.loadimpact.com/sdk) and [examples](https://github.com/loadimpact/loadimpactapi-samples) in different programming languages.
+LoadImpact can be [integrated](https://loadimpact.com/integrations/) with different services using our [SDKs](http://developers.loadimpact.com/sdk) and [examples](https://github.com/loadimpact/loadimpactapi-samples) in different programming languages.
 
 Note: The [Command line interface](https://github.com/loadimpact/loadimpact-cli) is for API version 3 (Token is available in app on the [integrations tab](https://app.loadimpact.com/account/token)).
-The version 3 API will replace the version 2 in the near future but for now it can only be used in the Load Impact CLI.
+The version 3 API will replace the version 2 in the near future but for now it can only be used in the LoadImpact CLI.

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: How to Interpret Results
-description: Introduction on understanding and interpreting your Load Impact load and performance test results
+description: Introduction on understanding and interpreting your LoadImpact load and performance test results
 categories: [test-results]
 order: 1
 redirect_from:
@@ -12,7 +12,7 @@ redirect_from:
 
 ***
 
-When you run a load test using Load Impact, you will always get a default results graph on the test result page. This graph will give you a high level estimate of how much time, as experienced by a user, it would take to load your API, webapp, or website.
+When you run a load test using LoadImpact, you will always get a default results graph on the test result page. This graph will give you a high level estimate of how much time, as experienced by a user, it would take to load your API, webapp, or website.
 
 In most situations, it is correct to say that if `VU Load Time` is flat the System Under Test(SUT) can handle the load comfortably. If you want to know where its limits are, you will need to increase the load/concurrent users. You have to look at the absolute load times of resources reported and decide what are acceptable values. Typically, most users have formal or informal SLAs for how their systems should respond.
 

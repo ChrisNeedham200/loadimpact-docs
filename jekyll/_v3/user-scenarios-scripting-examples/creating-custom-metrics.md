@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Creating custom metrics
-description: Custom metrics are used to extend the functionality of results with Load Impact. Custom metrics can be any numeric value and are able to be plotted in the main graph.
+description: Custom metrics are used to extend the functionality of results with LoadImpact. Custom metrics can be any numeric value and are able to be plotted in the main graph.
 categories: [user-scenario-scripting-examples]
 order: 10
 redirect_from: /knowledgebase/articles/174242-how-do-i-create-new-result-metrics
@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/174242-how-do-i-create-new-result-metrics
 
 ***
 
-Load Impact collects a lot of different result metrics by default, but sometimes you might want to measure something specific that we don’t currently include in the standard suite of metrics. This is where our custom metrics functionality comes in handy.
+LoadImpact collects a lot of different result metrics by default, but sometimes you might want to measure something specific that we don’t currently include in the standard suite of metrics. This is where our custom metrics functionality comes in handy.
 
 Custom metrics are very easy to use. Basically, you just calculate a sample point for your metric, then you call the [result.custom_metric()](https://loadimpact.com/load-script-api#result-custom_metric) function to store and aggregate the sample. You can store as many samples as you like, but if more than one sample is stored in the same 3-second period, an average value will be computed and stored instead of the two (or more) individual values.
 

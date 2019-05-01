@@ -9,15 +9,15 @@ redirect_from: /knowledgebase/articles/174255-how-do-i-test-a-site-where-you-nee
 
 ***
 
-Load Impact supports both basic HTTP authentication and HTTP POST operations, as well as HTTPS. This means we support most common methods for logging in to sites.
+LoadImpact supports both basic HTTP authentication and HTTP POST operations, as well as HTTPS. This means we support most common methods for logging in to sites.
 
 #### Login via HTTP POST
 
-Many sites let users login by filling in their username and password in input fields of a form that is then POST:ed to the web server. Load Impact supports HTTP POST operations, which mean that you may edit your load script and provide the login credentials (username/password) in a POST operation. When the server gets the right login credentials through this POST operation, it sets a session cookie in your browser. The session cookie is used for all future communications with the web server, authenticating you as a logged-in user. Load Impact automatically sets cookies when asked to by the server, so accessing pages as a logged-in user works fine if you just make sure your load script performs that initial POST operation.
+Many sites let users login by filling in their username and password in input fields of a form that is then POST:ed to the web server. LoadImpact supports HTTP POST operations, which mean that you may edit your load script and provide the login credentials (username/password) in a POST operation. When the server gets the right login credentials through this POST operation, it sets a session cookie in your browser. The session cookie is used for all future communications with the web server, authenticating you as a logged-in user. LoadImpact automatically sets cookies when asked to by the server, so accessing pages as a logged-in user works fine if you just make sure your load script performs that initial POST operation.
 
 Refer to:
 
-[The Load Impact load script API – http.post](https://loadimpact.com/load-script-api#http-post)
+[The LoadImpact load script API – http.post](https://loadimpact.com/load-script-api#http-post)
 
 ***
 
@@ -25,7 +25,7 @@ Refer to:
 
 Basic HTTP Authentication is a method where the server will only honor requests if they contain a special HTTP header (the “Authorization:” header) where the client has to place the login credentials (username and password) that are to be used to gain access to the site or page.
 
-Load Impact supports Basic HTTP Authentication by the use of URLs in this format:
+LoadImpact supports Basic HTTP Authentication by the use of URLs in this format:
 {% highlight lua linenos %}
 http://username:password@www.mydomain.com/index.php
 {% endhighlight %}
@@ -41,6 +41,6 @@ http.request({
 {% endhighlight %}
 Refer to:
 - [User scenario scripting]({{ site.baseurl }}/3.0/user-scenario-scripting-examples/)
-- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [The LoadImpact load script API](https://loadimpact.com/load-script-api)
 - [Setting HTTP headers for a request]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/http-headers/)
 - [How to load test an API]({{ site.baseurl }}/3.0/how-to-tutorials/how-to-load-test-an-api/)

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How does Load Impact prevent abuse of it's service?
-description: Explanation of how Load Impact prevents abuse
+title: How does LoadImpact prevent abuse of it's service?
+description: Explanation of how LoadImpact prevents abuse
 categories: [frequently-asked-questions]
 order: 2
 redirect_from: /knowledgebase/articles/173797-how-do-you-prevent-abuse-of-the-service
@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/173797-how-do-you-prevent-abuse-of-the-se
 
 ***
 
-Load Impact might be used by someone to run illegal load tests on a site, effectively causing a denial-of-service attack on the site in question. We implement a number of measures to make our service unattractive to potential attackers. These measures include, but are not limited to:
+LoadImpact might be used by someone to run illegal load tests on a site, effectively causing a denial-of-service attack on the site in question. We implement a number of measures to make our service unattractive to potential attackers. These measures include, but are not limited to:
 
 - Anonymous tests are limited in size and duration
   - The anonymous tests ramp up from 1 to 50 VUs during a 5-minute period. The maximum load level at the end of the 5 minutes will be equal to about 15 real users accessing the site simultaneously.

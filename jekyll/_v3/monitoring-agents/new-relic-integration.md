@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: New Relic APM in your Load Impact Test
-description: Load Impact's integration with New Relic allows you to view data from New Relic's APM.
+title: New Relic APM in your LoadImpact Test
+description: LoadImpact's integration with New Relic allows you to view data from New Relic's APM.
 categories: [monitoring-agents]
 order: 2
 redirect_from: /knowledgebase/articles/752553-monitoring-new-relic-metrics-while-running-a-load
@@ -9,16 +9,16 @@ redirect_from: /knowledgebase/articles/752553-monitoring-new-relic-metrics-while
 
 ***
 
-Monitoring New Relic Server and Application metrics in real time while running a Load Impact load test gives you a clear picture of your application and infrastructure’s performance under load. This is a helpful aid when identifying or verifying performance problems.
+Monitoring New Relic Server and Application metrics in real time while running a LoadImpact load test gives you a clear picture of your application and infrastructure’s performance under load. This is a helpful aid when identifying or verifying performance problems.
 
-If you are a New Relic client and have the Application Performance Monitoring (APM) product, you can view detailed performance metrics right in your Load Impact test result, including CPU and APDEX.
+If you are a New Relic client and have the Application Performance Monitoring (APM) product, you can view detailed performance metrics right in your LoadImpact test result, including CPU and APDEX.
 
 ### Step 1
-Begin by adding your New Relic API key to your Load Impact account. You can [find your API key](https://docs.newrelic.com/docs/apis/rest-api-v2/requirements/rest-api-key) in your New Relic account, go to: Account settings > Integrations > data sharing > API access.
+Begin by adding your New Relic API key to your LoadImpact account. You can [find your API key](https://docs.newrelic.com/docs/apis/rest-api-v2/requirements/rest-api-key) in your New Relic account, go to: Account settings > Integrations > data sharing > API access.
 
 ### Step 2
 
-To add your API key to Load Impact, in the left side bar, click Integrations then "New Relic"
+To add your API key to LoadImpact, in the left side bar, click Integrations then "New Relic"
 
 ![Add New Relic API Key]({{ site.baseurl }}/assets/img/v3/monitoring-agents/new-relic-integration/navigate-new-relic.png)
 

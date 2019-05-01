@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Basics to requests in Load Impact
-description: High level overview of making HTTP(s) requests with Load Impact
+title: Basics to requests in LoadImpact
+description: High level overview of making HTTP(s) requests with LoadImpact
 categories: [user-scenario-scripting-examples]
 order: 2
 redirect_from: /knowledgebase/articles/835704-load-resources
@@ -82,7 +82,7 @@ http.request_batch({
 
 Refer to:
 
-- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [The LoadImpact load script API](https://loadimpact.com/load-script-api)
 - [http.post()](https://loadimpact.com/load-script-api#http-post)
 - [http.get()](https://loadimpact.com/load-script-api#http-get)
 - [http module](https://loadimpact.com/load-script-api#http)

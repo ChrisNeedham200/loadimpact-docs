@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Conditional Logic
-description: Some test cases require behavior to be dependent on previous requests. You can build conditional logic directly into our scripts in Load Impact
+description: Some test cases require behavior to be dependent on previous requests. You can build conditional logic directly into our scripts in LoadImpact
 categories: [user-scenario-scripting-examples]
 order: 6
 redirect_from: /knowledgebase/articles/835725-conditional-logic
@@ -57,7 +57,7 @@ end
 
 Refer to:
 
-- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [The LoadImpact load script API](https://loadimpact.com/load-script-api)
 - [Lua math.random()](http://www.lua.org/manual/5.1/manual.html#pdf-math.random)
 - [Lua string.match()](http://www.lua.org/manual/5.1/manual.html#pdf-string.match)
 - [Lua string patterns](http://www.lua.org/manual/5.1/manual.html#5.4.1)

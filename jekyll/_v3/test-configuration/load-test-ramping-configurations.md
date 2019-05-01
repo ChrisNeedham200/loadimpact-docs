@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/945337-different-types-of-ramping-configu
 
 ***
 
-There are countless ways to configure tests in Load Impact. Depending on how you configure your ramping, it will provide different test profiles that can help you learn different things. Running different types of tests will provide different types of results so you can take different types of actions.
+There are countless ways to configure tests in LoadImpact. Depending on how you configure your ramping, it will provide different test profiles that can help you learn different things. Running different types of tests will provide different types of results so you can take different types of actions.
 
 Here are some examples of tests you may run. This isn't meant to be an all inclusive list, but some of the most common test ramping configurations used. You should adjust values to suit your specific need.
 

@@ -20,7 +20,7 @@ It's important to note that every user in LoadImpact is an owner of organization
 
 #### In the web interface
 
-If you are running tests from the web interface, you will need to use the drop down menu in the left side bar, to select a project within the organization with a subscription. In Figure 1 below, our user is a member of two organizations, "Load Impact" and "Second Organization".  In this example "Load Impact" is our primary organization associated with the users account and  "Second Organization" is one which the user has been invited to. In order to run tests using the subscription that was purchased and associated with "Second Organization" we would need to select a Project associated with it.
+If you are running tests from the web interface, you will need to use the drop down menu in the left side bar, to select a project within the organization with a subscription. In Figure 1 below, our user is a member of two organizations, "LoadImpact" and "Second Organization".  In this example "LoadImpact" is our primary organization associated with the users account and  "Second Organization" is one which the user has been invited to. In order to run tests using the subscription that was purchased and associated with "Second Organization" we would need to select a Project associated with it.
 
 #### From the command line
 

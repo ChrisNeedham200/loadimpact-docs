@@ -8,7 +8,7 @@ order: 5
 
 ***
 
-The performance trending graph plots individual runs of the same test over time. This enables you to locate patterns of performance degradation or improvement and easily validate the performance impact of code and infrastructure changes. Once you have completed more than one run of a particular test, Load Impact's performance trending plots single, high-level performance metrics on the same graph for each individual run.
+The performance trending graph plots individual runs of the same test over time. This enables you to locate patterns of performance degradation or improvement and easily validate the performance impact of code and infrastructure changes. Once you have completed more than one run of a particular test, LoadImpact's performance trending plots single, high-level performance metrics on the same graph for each individual run.
 
 The single high-level performance metric given in the performance trending graph is the _95% percentile_ of all requests included in the test. This means that 95% of the HTTP(s) requests in your test will have a load time better than this value. Similar to looking at an individual tests `VU Load time`, a rising graph indicates degrading performance over time.
 

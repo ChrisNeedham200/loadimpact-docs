@@ -10,7 +10,7 @@ redirect_from: /knowledgebase/articles/1166368-why-is-my-response-body-empty
 ***
 
 
-By default, Load Impact does not save any responses from the requests we send. Saving this information would consume extra resources on the load generator and generally are not needed when testing.
+By default, LoadImpact does not save any responses from the requests we send. Saving this information would consume extra resources on the load generator and generally are not needed when testing.
 
 However, there are cases where you need to access the content response:
 - [to verify the response content.]({{ site.baseurl }}/3.0/user-scenarios-scripting-examples/verifying-resource-contents/)

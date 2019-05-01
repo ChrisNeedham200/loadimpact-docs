@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Load Impact Notifications
+title: LoadImpact Notifications
 description: Notifications allow you to send updates to be aware of tests starting and finishing. You can view these notifications in Slack, Hipchat, or via webhook.
 categories: [integrations]
 order: 3
@@ -16,14 +16,14 @@ Notifications allow you to subscribe to events happening in your organizations/p
 
 You will likely want to use notifications when you schedule your performance tests and/or configure them into your Continuous Integration pipeline.
 
-Load Impact supports three different notification options:
+LoadImpact supports three different notification options:
 - Slack
 - HipChat
 - WebHook
 
 **Note:** Notifications are configured per organization by the organization owner or an admin member.
 
-![Load Impact Notifications]({{ site.baseurl }}/assets/img/v3/integrations/notifications/loadimpact-notifications.png)
+![LoadImpact Notifications]({{ site.baseurl }}/assets/img/v3/integrations/notifications/loadimpact-notifications.png)
 
 
 ### Slack
@@ -31,7 +31,7 @@ Slack is a messaging app for teams. Follow these instructions to configure Slack
 
 1. From Slack, add a new app and select Incoming WebHook app.
 2. Select or create a channel and copy the generated WebHook URL.
-3. From Load Impact, select Notifications from your organization settings. (User menu > Organizations > Organization setting > Notifications)
+3. From LoadImpact, select Notifications from your organization settings. (User menu > Organizations > Organization setting > Notifications)
 4. Add Slack WebHook URL into the Slack input and click Save or Test Hook.
 
 ![Slack Setup]({{ site.baseurl }}/assets/img/v3/integrations/notifications/slack-instructions.png)
@@ -42,7 +42,7 @@ Slack is a messaging app for teams. Follow these instructions to configure Slack
 HipChat is a group chat & IM for teams . Follow these instructions to configure HipChat notifications:
 
 1. From HipChat, go to Integrations, select a Room and the “Build your own integration” option from the list of integrations. Copy the room notification URL presented in the "Send messages to this room by posting this URL" field on the next page.
-2. From Load Impact, select Notifications from your organization settings. (User menu > Organizations > Organization setting > Notifications)
+2. From LoadImpact, select Notifications from your organization settings. (User menu > Organizations > Organization setting > Notifications)
 3. Paste room notification URL into the HipChat input and click Save or Test Hook.
 
 ![Hipchat Setup]({{ site.baseurl }}/assets/img/v3/integrations/notifications/hipchat-instructions.png)

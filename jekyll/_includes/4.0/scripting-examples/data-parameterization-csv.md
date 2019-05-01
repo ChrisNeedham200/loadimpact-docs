@@ -27,7 +27,7 @@ export default function() {
     let randomUser = csvData.data[Math.floor(Math.random() * csvData.data.length)];
     console.log("Random user: ", JSON.stringify(randomUser));
 
-    // Login to Load Impact test site using the random user
+    // Login to LoadImpact test site using the random user
     let res = http.post("https://test.loadimpact.com/login.php", {login: randomUser.username, password: randomUser.password});
     check(res, {
         "login succeeded": (r) => r.status === 200 && r.body.indexOf("successfully authorized") !== -1

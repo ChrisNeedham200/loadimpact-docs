@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: Simulating realistic Load with Load Impact
-description: "Simulating realistic load with Load Impact"
+title: Simulating realistic Load with LoadImpact
+description: "Simulating realistic load with LoadImpact"
 categories: [user-scenarios]
 order: 2
 redirect_from: /knowledgebase/articles/265464-simulating-realistic-load-using-load-impact
@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/265464-simulating-realistic-load-using-lo
 
 ***
 
-Load Impact’s basic functionality is geared towards simulating user behavior on your site in the most realistic way possible.
+LoadImpact’s basic functionality is geared towards simulating user behavior on your site in the most realistic way possible.
 
 In a real-life situation, if you were to have concurrent users on your website at the same time, you probably won’t have all of them on the same page doing precisely the same things. This is why you can run a test with multiple user scenarios. This allows you to create a variety of realistic user scenarios(test scripts) and have them all execute simulatenously.
 

@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: What metrics are reported back for a URL?
-description: Explanation on the metrics Load Impact reports back on URLs in a load test
+description: Explanation on the metrics LoadImpact reports back on URLs in a load test
 categories: [test-results]
 order: 3
 redirect_from: /knowledgebase/articles/174136-what-metrics-are-reported-for-a-url
@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/174136-what-metrics-are-reported-for-a-ur
 
 ***
 
-For each URL in a test, Load Impact reports what status codes the tested server has responded with. For each of those status codes, the max, min, and average response time, and the count of each response with that particular status code per URL.
+For each URL in a test, LoadImpact reports what status codes the tested server has responded with. For each of those status codes, the max, min, and average response time, and the count of each response with that particular status code per URL.
 
 On the test results page, there is an tab “URLs” where you see a list of every URL included in the test, and some statistics about the URL. This is how it looks:
 

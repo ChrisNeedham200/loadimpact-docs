@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Projects
-description: Projects are a foldering system within Load Impact. Projects allow you to organize your tests/scenarios and assign team members to have access to them.
+description: Projects are a foldering system within LoadImpact. Projects allow you to organize your tests/scenarios and assign team members to have access to them.
 categories: [organizations-projects]
 order: 2
 redirect_from: /knowledgebase/articles/780522-projects
@@ -37,6 +37,6 @@ Once someone has been invited to an organization and assigned a permission level
 
 **Admin:** Can do everything an Owner can do, including adding/removing members and permissions, assigning members to projects, managing billing, creating projects, managing testing, managing API/server agent/New Relic tokens and keys, and creating new organizations. The only thing they can not do is remove an organization owner. Finally, Admins are automatically assigned to all projects in the organization.
 
-**Read/Write:** Once assigned to a project, Read/Write members can create user scenarios, data stores and tests, and can run tests. They can also access Load Impact server agent tokens and New Relic API keys. They can not manage billing, create projects, assign themselves or other members to projects, add/remove members from the organization, or access Load Impact API tokens. Finally, Read/Write members must be specifically added to projects by organization Owners or Admins.
+**Read/Write:** Once assigned to a project, Read/Write members can create user scenarios, data stores and tests, and can run tests. They can also access LoadImpact server agent tokens and New Relic API keys. They can not manage billing, create projects, assign themselves or other members to projects, add/remove members from the organization, or access LoadImpact API tokens. Finally, Read/Write members must be specifically added to projects by organization Owners or Admins.
 
 If you have any questions about projects or would like help with setup, please reach out to us here at support.

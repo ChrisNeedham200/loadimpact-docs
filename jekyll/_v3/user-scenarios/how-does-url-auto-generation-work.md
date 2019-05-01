@@ -9,7 +9,7 @@ redirect_from: /knowledgebase/articles/174237-how-does-the-auto-generate-feature
 
 ***
 
-Load Impact provides three tools for you to get a basic script quickly; the “Auto-generate” feature, the [Chrome Extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension) and the [Proxy Recorder]({{ site.baseurl }}/3.0/user-scenarios/load-impact-proxy-recorder).
+LoadImpact provides three tools for you to get a basic script quickly; the “Auto-generate” feature, the [Chrome Extension]({{ site.baseurl }}/3.0/user-scenarios/load-impact-chrome-extension) and the [Proxy Recorder]({{ site.baseurl }}/3.0/user-scenarios/load-impact-proxy-recorder).
 
 ![Create user scenarios in a variety of ways]( {{ site.baseurl}}/assets/img/v3/user-scenarios/how-does-auto-generation-work/user-scenario-options.jpg)
 

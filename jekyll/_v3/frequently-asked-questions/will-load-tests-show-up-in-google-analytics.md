@@ -12,11 +12,11 @@ redirect_from: /knowledgebase/articles/174526-will-load-testing-transactions-sho
 
 Our load testing transactions will not show up on Google Analytics. Usually, a web page refers to the Google Analytics javascript “ga.js”, which is loaded as part of the loading of a web page. The script is loaded, then executed by the browser, and then the script tells the browser to make a request to Google, telling Google about the page access so they can store the statistics in the GA database there.
 
-In the case of Load Impact, there are two things preventing Google Analytics from seeing our transactions:
+In the case of LoadImpact, there are two things preventing Google Analytics from seeing our transactions:
 
-(1) Load Impact does not execute JavaScript on the client side. This means that even if we load ga.js from Google it won’t be executed, which means Google will not get any statistics from the simulated clients in our load test.
+(1) LoadImpact does not execute JavaScript on the client side. This means that even if we load ga.js from Google it won’t be executed, which means Google will not get any statistics from the simulated clients in our load test.
 
-(2) If you use Load Impact to make a recording or just enter a URL for a page you want to test, we will by default filter out any requests to external sites from the resulting load script. I.e. If your site is test.loadimpact.com, any requests to google.com (either the request to fetch ga.js, or the AJAX request made by ga.js) will be removed from the load script.
+(2) If you use LoadImpact to make a recording or just enter a URL for a page you want to test, we will by default filter out any requests to external sites from the resulting load script. I.e. If your site is test.loadimpact.com, any requests to google.com (either the request to fetch ga.js, or the AJAX request made by ga.js) will be removed from the load script.
 
 If you want your transactions to show up on Google Analytics**(NOT RECOMMENDED)**, you will have to:
 

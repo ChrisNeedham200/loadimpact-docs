@@ -15,7 +15,7 @@ redirect_from:
 
 <div class="callout callout-warning" role="alert">
   <b>New Postman converter available in Beta release!</b><br>
-  A new and improved Postman to Load Impact converter has recently been released.
+  A new and improved Postman to LoadImpact converter has recently been released.
   In order to use the new converter, please clone the repository <a href="https://github.com/bookmoons/postman-to-k6/tree/bookmoons/improve">here</a>, install dependencies with `npm install` then use `node bin / postman-to-k6 collection.json -o k6-script.js`, where the collection JSON is your collection and the JavaScript is the output.  If you wish to use the existing version, please read below.
 </div>
 

@@ -9,9 +9,9 @@ redirect_from: /knowledgebase/articles/814794-testing-a-system-that-requires-upl
 
 ***
 
-In Load Impact's Lua scripted product(version 3), there is no way to upload a file and make it available in a user scenario for testing file uploads. However, there are a few methods for testing systems where file uploads is a requirement.
+In LoadImpact's Lua scripted product(version 3), there is no way to upload a file and make it available in a user scenario for testing file uploads. However, there are a few methods for testing systems where file uploads is a requirement.
 
-**NOTE**: k6 supports file uploads, so Load Impact suggests using that for testing this type of scenario. The following article and code sample is provided for posterity and gives options when using the Lua based product.
+**NOTE**: k6 supports file uploads, so LoadImpact suggests using that for testing this type of scenario. The following article and code sample is provided for posterity and gives options when using the Lua based product.
 
 If you need to send the right data (the real file contents) you have to somehow get the file to the load generator. There are some ways to do this:
 

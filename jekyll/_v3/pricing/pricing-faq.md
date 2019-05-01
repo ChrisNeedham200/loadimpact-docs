@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: Pricing FAQ
-description: FAQ for Load Impact pricing related questions
+description: FAQ for LoadImpact pricing related questions
 categories: [pricing]
 order: 1
 ---
@@ -11,7 +11,7 @@ order: 1
 Here are some of our most frequently asked questions about pricing. If your question isn't answered here, please contact support.
 
 
-### Does Load Impact have a concept of VU Hours?
+### Does LoadImpact have a concept of VU Hours?
 
 No - There is no concept of VU hours for our plans. You can run all your tests up to the maximum limits as defined by your subscription
 

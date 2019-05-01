@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: What are Load Impact's definitions of concepts and terms?
-description: Definitions of concepts and terminology commonly used in Load Testing as it relates to Load Impact.
+title: What are LoadImpact's definitions of concepts and terms?
+description: Definitions of concepts and terminology commonly used in Load Testing as it relates to LoadImpact.
 categories: [frequently-asked-questions]
 order: 1
 redirect_from:
@@ -22,11 +22,11 @@ Most load testing tools have the same basic functionality but choose to call the
 
 **Test result** – The Test result is the actual data collected during the test. The Test result will include load times for individual resources as well as aggregated values such as User load time and Accumulated load time. Bandwidth, requests per second and failure rate is also reported in the result. Non numeric values such as custom log data are also a part of a result.
 
-**Load zone** – A Load zone is a geographical location from where Load Impact can generate load. These are usually given a describing name, i.e. “Dublin, IE”, “Ashburn, US” etc. Currently all public Amazon AWS regions are available as load zones.
+**Load zone** – A Load zone is a geographical location from where LoadImpact can generate load. These are usually given a describing name, i.e. “Dublin, IE”, “Ashburn, US” etc. Currently all public Amazon AWS regions are available as load zones.
 
 **Load generator** – A cloud server instance that is used to generate load during the load test. Load generators will host a maximum of 500 VUs
 
-**Credits** – Credits are a virtual currency used on Load Impact to run tests. The number of Credits required to run a test depends on the number of Users in the test and for how long the test is set to run. Credits are usually bought in packages with increasing discount levels.
+**Credits** – Credits are a virtual currency used on LoadImpact to run tests. The number of Credits required to run a test depends on the number of Users in the test and for how long the test is set to run. Credits are usually bought in packages with increasing discount levels.
 
 **Target URL** – The Target URL has two purposes. In connection with User scenarios the Target URL is used when generating a script via either the auto-generate feature or the Proxy recorder. The Target URL is the page that will be analyzed when we use the Page analyzer to create a load script, or the starting point when doing a recording using the Proxy recorder. A Test configuration also has a Target URL. Here, the Target URL is only used to geographically determine where the target system is, so that we can place markers on the world map that shows where traffic is being generated and where it is going when the test is running. If there are no User scenarios specified for a Test configuration (i.e. if there is only one User scenario in the Test configuration, and that one is not changed from its default
 value – `[Auto-generate user scenario]`), the Target URL will be used to dynamically create a User scenario every time the test is started, in the same way if the user had used the Analyze page functionality previously mentioned.
@@ -37,11 +37,11 @@ value – `[Auto-generate user scenario]`), the Target URL will be used to dynam
 
 **Ramping up/down** – Ramping up means increasing the number of active Users over a period of time. Ramping down means reducing the number of active Users.
 
-**Queue** – The Queue is a holding area where tests are stored while waiting to be started by a test worker. Whenever a test is in this state, it will appear as “Queued” in the Load Impact user interface.
+**Queue** – The Queue is a holding area where tests are stored while waiting to be started by a test worker. Whenever a test is in this state, it will appear as “Queued” in the LoadImpact user interface.
 
-**Test worker** – The Test worker is an internal Load Impact service that is responsible for reserving and booting load generator instances, transferring the needed Test configurations, starting load generation, aggregating results etc. In general, it runs the load test.
+**Test worker** – The Test worker is an internal LoadImpact service that is responsible for reserving and booting load generator instances, transferring the needed Test configurations, starting load generation, aggregating results etc. In general, it runs the load test.
 
-**Page analyzer** – A tool for creating User scenarios of single pages. Also has an interface that can be used for analyzing and optimizing client side code, accessed through the footer menu at Load Impact.
+**Page analyzer** – A tool for creating User scenarios of single pages. Also has an interface that can be used for analyzing and optimizing client side code, accessed through the footer menu at LoadImpact.
 
 **Chrome Extension** - A tool for creating User scenarios. Records the HTTP requests of a real browser and turns them into a User scenario.
 

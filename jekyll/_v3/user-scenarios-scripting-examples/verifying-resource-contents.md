@@ -67,4 +67,4 @@ The `http.request_batch()` returns a table of `http.Response` objects, one for e
 
 See also:
 
- - [Load Impact Load Script API (Lua)](https://loadimpact.com/load-script-api)
+ - [LoadImpact Load Script API (Lua)](https://loadimpact.com/load-script-api)

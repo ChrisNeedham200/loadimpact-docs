@@ -17,7 +17,7 @@ redirect_from:
 
 If your site is using some kind of CSRF token and you do a recording using our session recorder, the token recorded will most likely not be valid for simulated users in the load test. The same is true for ASP.NET sites using a VIEWSTATE.  Other names for this type of token are form_key in Magento, wpnonce in woocommerce, and more.
 
-To fix this, you will need to do a little bit of scripting. The first thing you need to do is to save the body data when requesting the page with the form. By default Load Impact will not save any of the data from the requests, so you will need to specify the number of bytes you want to save. Once you have the body of the response, you can start look for the token. This is easiest to do with simple string matching. If you find the token, you can use it as one of the parameters in the following request, usually a POST.
+To fix this, you will need to do a little bit of scripting. The first thing you need to do is to save the body data when requesting the page with the form. By default LoadImpact will not save any of the data from the requests, so you will need to specify the number of bytes you want to save. Once you have the body of the response, you can start look for the token. This is easiest to do with simple string matching. If you find the token, you can use it as one of the parameters in the following request, usually a POST.
 
 #### Example code
 This is a theoretical example. You will need to identify the page where the token is created and adjust the `string.match()` criteria.

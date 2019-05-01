@@ -110,7 +110,7 @@ Restart agent:
 ```
       sudo initctl restart li_metrics_agent
 ```
-Now when you run Load Impact tests you can see that 3 new metrics ("/", "time" and "size") have appeared.
+Now when you run LoadImpact tests you can see that 3 new metrics ("/", "time" and "size") have appeared.
 Fine tuning: custom metric names
 
 We can change the metric name by using the sed command. In its simplest form, you can change one name to another name using the following syntax:

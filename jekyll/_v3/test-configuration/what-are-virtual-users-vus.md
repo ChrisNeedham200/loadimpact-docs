@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
 title: What are VUs (Virtual Users)?
-description: Definition of Load Impact's Virtual Users. Complex simulated users capable of making multiple concurrent network connections.
+description: Definition of LoadImpact's Virtual Users. Complex simulated users capable of making multiple concurrent network connections.
 categories: [test-configuration]
 order: 2
 ---

@@ -16,7 +16,7 @@ What you need to do is figure out how to generate a realistic traffic pattern, t
 
 Creating a mobile user scenario from a session recording
 
-Recording usage sessions is almost as simple as with a desktop application. You use the Load Impact proxy recorder and set your mobile device to use that proxy when fetching HTTP(s) content from the Internet. This is how you do it:
+Recording usage sessions is almost as simple as with a desktop application. You use the LoadImpact proxy recorder and set your mobile device to use that proxy when fetching HTTP(s) content from the Internet. This is how you do it:
 
 1. Connect your mobile device to Internet through a WiFi or cable connection. This is necessary because you are usually not able to set an HTTP proxy for the device when it is connected over a mobile network
 
@@ -56,13 +56,13 @@ Configuring the proxy server on an IOS device is even simpler:
 
 
 
-6. Click the "Start recording" button on your desktop in the Load Impact interface.
+6. Click the "Start recording" button on your desktop in the LoadImpact interface.
 You should see confirmation that the proxy recorder has started, do not close this window. The proxy recorder sometimes can take a few moments to connect initialize, so please try again if it does not launch on the first try.
 
 
 7. Use your mobile device to run your app, or whatever you want to test. Note that if you have apps running in the background these can generate traffic too. Make sure you're only running the app you want to test.
 
-8. Click "Stop recording" in the Load Impact interface on the desktop. This stops the recording and shows you the user scenario code generated from the transactions recorded from your mobile device.
+8. Click "Stop recording" in the LoadImpact interface on the desktop. This stops the recording and shows you the user scenario code generated from the transactions recorded from your mobile device.
 
 You now have a user scenario containing the transactions made by your mobile device. Sometimes, such a recording can be used straight out of the box as a user scenario in a load test, and sometimes you will need to modify it, for example if your app requires user authentication and you want the simulated users in your load test to authenticate with different user credentials (username/password combinations) you would have to edit your user scenario code to accomplish that - see here for more info on how to make simulated clients login as different users.
 

@@ -132,4 +132,4 @@ You may code whole user stories this way:
 
 Refer to:
 
-- [The Load Impact load script API](https://loadimpact.com/load-script-api)
+- [The LoadImpact load script API](https://loadimpact.com/load-script-api)
