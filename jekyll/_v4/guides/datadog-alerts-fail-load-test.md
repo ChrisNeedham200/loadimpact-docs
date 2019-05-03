@@ -1,22 +1,22 @@
 ---
 layout: classic-docs
-title: How to use DataDog alerts and Thresholds to fail your k6 test
-description: A guide on how to use DataDog alerts and Thresholds to fail your k6 test.
+title: How to use DataDog alerts and Thresholds to fail your load test
+description: A guide on how to use DataDog alerts and Thresholds to fail your load test.
 categories: [guides]
 order: 12
+redirect_from: /4.0/guides/how-to-use-datadog-alerts-to-fail-k6-test/
 ---
 
 ***
 
 <h2>Background</h2>
 
-[DataDog](https://www.datadoghq.com/) is a monitoring and analytics platform that can help you to get full visibility of the performance of your applications. We ❤️ DataDog at [LoadImpact](https://loadimpact.com/) and use it to monitor the different services of our [Load Testing platform](https://loadimpact.com/). [DataDog alerts](https://docs.datadoghq.com/monitors/) give the ability to know when critical changes in your system are occurring. Triggered alerts appear in the [Event Stream](https://docs.datadoghq.com/graphing/event_stream/), allowing collaboration around active issues in your applications or infrastructure.
+[DataDog](https://www.datadoghq.com/) is a monitoring and analytics platform that can help you to get full visibility of the performance of your applications. Here at [LoadImpact](https://loadimpact.com/) we use DataDog to monitor various different services of our platform. [DataDog alerts](https://docs.datadoghq.com/monitors/) give the ability to know when critical changes in your system are occurring. These triggered alerts appear in DataDog's [Event Stream](https://docs.datadoghq.com/graphing/event_stream/), allowing collaboration around active issues in your applications or infrastructure.
 
-[k6](https://k6.io/) is our open source load testing tool for testing the performance of your applications. 
+One potential performance issue is that a System Under Test(SUT) has high CPU consumption when under stress. This tutorial will show you how to fail your load test for this type of condition by using [DataDog's API](https://docs.datadoghq.com/api) and [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) in LoadImpact.
 
-We believe performance testing should be [goal oriented](https://loadimpact.com/our-beliefs/#load-testing-should-be-goal-oriented), and your test outcome should inform if your test success or fails. 
-
-In some cases, a system cannot handle a particular load if its CPU consumption is too high. This tutorial will show how to fail your k6 test for this type of conditions using the [DataDog's API](https://docs.datadoghq.com/api) and [k6 thresholds](https://docs.k6.io/docs/thresholds).
+- TOC
+{:toc}
 
 ***
 
@@ -49,7 +49,7 @@ Now the monitor will appear in the DataDog Event Stream if the metric threshold 
 
 Next, we will need a test script to run. Here is our example that we will use in this test:
 
-```javascript
+{% highlight js linenos %}
 import http from "k6/http";
 import { Counter } from "k6/metrics";
 import { check, group, sleep } from "k6";
@@ -76,7 +76,7 @@ const getDataDogHeader = tagName => {
     };
 };
 
-export function setup() {  // function for getting start time of test, executed before actual load testing 
+export function setup() {  // function for getting start time of test, executed before actual load testing
     let time = Date.now();
     return time;
 }
@@ -89,7 +89,7 @@ export default function () {
     sleep(1);
 }
 
-export function teardown(time) { // function which queries DataDogs event stream for alerts in time window of test run, executed after actual load testing 
+export function teardown(time) { // function which queries DataDogs event stream for alerts in time window of test run, executed after actual load testing
     let endTime = Math.floor(Date.now() / 1000);
     let startTime = Math.floor(time / 1000);
     let monitorTags = [
@@ -117,7 +117,7 @@ export function teardown(time) { // function which queries DataDogs event stream
     });
 
 }
-```
+{% endhighlight %}
 
 You can find how to manage your DataDog API and Application keys [here](https://docs.datadoghq.com/account_management/faq/api-app-key-management/).
 
@@ -138,7 +138,7 @@ Run your test and in our case since we configured our script to run only 50 VUs,
 
 Let's update our script to produce more load on our system under test. For this example, we achieve this by increasing number of VUs from 50 to 150:
 
-```javascript
+{% highlight js linenos %}
 export let options = {
     stages: [
         { duration: "30s", target: 150 }, // increasing number of VUs from 50 to 150
@@ -149,19 +149,11 @@ export let options = {
         "Httpbin_CPU_Alert": ["count < 1"]
     }
 };
-```
+{% endhighlight %}
 
 As we can see, after increasing load our test was failed due to exceeding our defined threshold value:
 
 ![datadog_pull_10]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/how-to-use-datadog-alerts-to-fail-k6-test/datadog_pull_10.png)
-
-***
-
-## Conclusion
-
-The k6 scripting capabilities and DataDog API integrate nicely to test the performance of your system under an appropriate load. We ❤️ DataDog and this tutorial have shown one simple example, but the same strategy could be used in your load tests to validate their results based on the status from a third-party tool. 
-
-As always, we are looking forward to hearing about your load testing experience; if you have any feedback, don’t hesitate to contact our support team or any k6 channel:  [community forum](https://community.k6.io/), [k6 github repository](https://github.com/loadimpact/k6) or [Slack](https://k6.io/slack). 
 
 ***
 
@@ -170,4 +162,4 @@ As always, we are looking forward to hearing about your load testing experience;
 - [DataDog Alerts](https://docs.datadoghq.com/monitors/)
 - [DataDog Event Stream](https://docs.datadoghq.com/graphing/event_stream/)
 - [DataDog API](https://docs.datadoghq.com/api)
-- [k6 Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
+- [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
