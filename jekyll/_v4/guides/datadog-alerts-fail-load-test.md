@@ -1,7 +1,7 @@
 ---
 layout: classic-docs
-title: How to use DataDog alerts and Thresholds to fail your load test
-description: A guide on how to use DataDog alerts and Thresholds to fail your load test.
+title: How to use Datadog alerts and Thresholds to fail your load test
+description: A guide on how to use Datadog alerts and Thresholds to fail your load test.
 categories: [guides]
 order: 12
 redirect_from: /4.0/guides/how-to-use-datadog-alerts-to-fail-k6-test/
@@ -11,9 +11,9 @@ redirect_from: /4.0/guides/how-to-use-datadog-alerts-to-fail-k6-test/
 
 <h2>Background</h2>
 
-[DataDog](https://www.datadoghq.com/) is a monitoring and analytics platform that can help you to get full visibility of the performance of your applications. Here at [LoadImpact](https://loadimpact.com/) we use DataDog to monitor various different services of our platform. [DataDog alerts](https://docs.datadoghq.com/monitors/) give the ability to know when critical changes in your system are occurring. These triggered alerts appear in DataDog's [Event Stream](https://docs.datadoghq.com/graphing/event_stream/), allowing collaboration around active issues in your applications or infrastructure.
+[Datadog](https://www.datadoghq.com/) is a monitoring and analytics platform that can help you to get full visibility of the performance of your applications. Here at [LoadImpact](https://loadimpact.com/) we use Datadog to monitor various different services of our platform. [Datadog alerts](https://docs.datadoghq.com/monitors/) give the ability to know when critical changes in your system are occurring. These triggered alerts appear in Datadog's [Event Stream](https://docs.datadoghq.com/graphing/event_stream/), allowing collaboration around active issues in your applications or infrastructure.
 
-One potential performance issue is that a System Under Test(SUT) has high CPU consumption when under stress. This tutorial will show you how to fail your load test for this type of condition by using [DataDog's API](https://docs.datadoghq.com/api) and [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) in LoadImpact.
+One potential performance issue is that a System Under Test(SUT) has high CPU consumption when under stress. This tutorial will show you how to fail your load test for this type of condition by using [Datadog's API](https://docs.datadoghq.com/api) and [thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %}) in LoadImpact.
 
 - TOC
 {:toc}
@@ -23,15 +23,15 @@ One potential performance issue is that a System Under Test(SUT) has high CPU co
 ## Requirements
 
 * A site/system to test. In this example, we will test a site already running as a ECS Service. This site is available at https://httpbin.test.loadimpact.com.
-* An already configured DataDog integration with a platform your site is running on. In our case it is DataDog integration with AWS, please refer to the official [DataDog AWS Integration Guide](https://docs.datadoghq.com/integrations/amazon_web_services) for details.
+* An already configured Datadog integration with a platform your site is running on. In our case it is Datadog integration with AWS, please refer to the official [Datadog AWS Integration Guide](https://docs.datadoghq.com/integrations/amazon_web_services) for details.
 * An account in LoadImpact with an appropriate [subscription](https://www.loadimpact.com/pricing).
-* An account in DataDog that allows us to create [monitors](https://docs.datadoghq.com/monitors).
+* An account in Datadog that allows us to create [monitors](https://docs.datadoghq.com/monitors).
 
 ***
 
-## Create a Monitor in DataDog
+## Create a Monitor in Datadog
 
-First, we want to create a monitor in DataDog which triggers an alert if CPU utilization reaches 100 units or more on the ECS Service. You may wish to monitor something else, so feel free to adjust this to meet your needs.
+First, we want to create a monitor in Datadog which triggers an alert if CPU utilization reaches 100 units or more on the ECS Service. You may wish to monitor something else, so feel free to adjust this to meet your needs.
 While creating a monitor make next actions:
 * Choose  `Threshold alert` as a detection method
 * Choose `aws.ecs.service.cpuutilization` metric from `servicename:<your_service_name>` in "Define the metric" step
@@ -41,7 +41,7 @@ While creating a monitor make next actions:
 ![datadog_pull_2]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/how-to-use-datadog-alerts-to-fail-k6-test/datadog_pull_2.png)
 ![datadog_pull_1]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/how-to-use-datadog-alerts-to-fail-k6-test/datadog_pull_1.png)
 
-Now the monitor will appear in the DataDog Event Stream if the metric threshold is reached. This is what we will look for when we evaluate the LoadImpact Thresholds later.
+Now the monitor will appear in the Datadog Event Stream if the metric threshold is reached. This is what we will look for when we evaluate the LoadImpact Thresholds later.
 
 ***
 
@@ -106,7 +106,7 @@ export function teardown(time) { // function which queries DataDogs event stream
     monitorTags.forEach(tag => {
         let response = http.get(
             datadogApi + reqString + tag,
-            getDataDogHeader("DataDog Event Stream")
+            getDataDogHeader("Datadog Event Stream")
         );
         let body = JSON.parse(response.body);
         body.events.forEach(event => {
@@ -119,7 +119,7 @@ export function teardown(time) { // function which queries DataDogs event stream
 }
 {% endhighlight %}
 
-You can find how to manage your DataDog API and Application keys [here](https://docs.datadoghq.com/account_management/faq/api-app-key-management/).
+You can find how to manage your Datadog API and Application keys [here](https://docs.datadoghq.com/account_management/faq/api-app-key-management/).
 
 Go to [LoadImpact](https://app.loadimpact.com) and push button "CREATE NEW TEST". Choose "SRIPTING" in "WEBSITE/APP TESTING" section:
 ![datadog_pull_3]({{ site.baseurl }}/assets/img/v4/how-to-tutorials/how-to-use-datadog-alerts-to-fail-k6-test/datadog_pull_3.png)
@@ -158,8 +158,8 @@ As we can see, after increasing load our test was failed due to exceeding our de
 ***
 
 ## See also
-- [DataDog](https://www.datadoghq.com/)
-- [DataDog Alerts](https://docs.datadoghq.com/monitors/)
-- [DataDog Event Stream](https://docs.datadoghq.com/graphing/event_stream/)
-- [DataDog API](https://docs.datadoghq.com/api)
+- [Datadog](https://www.datadoghq.com/)
+- [Datadog Alerts](https://docs.datadoghq.com/monitors/)
+- [Datadog Event Stream](https://docs.datadoghq.com/graphing/event_stream/)
+- [Datadog API](https://docs.datadoghq.com/api)
 - [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
