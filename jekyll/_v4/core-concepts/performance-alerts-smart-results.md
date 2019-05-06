@@ -62,7 +62,7 @@ Test Health Performance Alerts are alerts that intend to highlight test or scrip
 
 **This is an informational alert, we strongly recommend you remove third party requests from your test**
 
-This alert is raised when we detect more than 3 different domains in a test. This is typically caused by your test script containing requests to 3rd party resources such as CDNs, social media scripts, analytic tools, etc. It's recommended to remove third party requests as it may violate the terms of service of that third party, that third party may throttle your requests skewing the percentiles of your results, or you may have no ability to impact performance of that third party.
+This alert is raised when we detect many different domains in a test. This is typically caused by your test script containing requests to 3rd party resources such as CDNs, social media scripts, analytic tools, etc. It's recommended to remove third party requests as it may violate the terms of service of that third party, that third party may throttle your requests skewing the percentiles of your results, or you may have no ability to impact performance of that third party.
 
 *Special Notes:*
 - You may have a valid reason to test your CDN. Most CDNs charge based on usage so your tests could result in additional costs from your CDN.
