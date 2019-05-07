@@ -29,6 +29,22 @@ This alert is raised when a throughput limit has been detected. The number of ac
 
 ***
 
+### High HTTP failure rate
+
+The total number of HTTP(s) errors is higher than 15% during the first 100 completed script iterations.
+
+Errors that occur early on are typically not considered to be performance related. Our automated algorithms also have not detected an increase in the error rate as load has increased.
+With that in mind, there are a number of non-performance related reasons for errors, which includes, but is not limited to:
+
+- You're making invalid requests:
+  - Invalid URLs, eg. with a typo in it or a hostname that is not in the public DNS system.
+  - Missing required headers, eg. authentication/authorization headers or user-agent.
+  - Sending the wrong body data.
+- You're trying to test a system that's behind a firewall.
+- You're hitting a rate limit.
+
+**Note:** Failed responses are often returned much faster than successful responses.
+
 ### Increased HTTP failure rate
 
 This alert is raised when a period of elevated HTTP errors has been detected (10% higher than in the beginning of the test). There could be a number of reasons for this, e.g. web server configuration (timeouts, rate limiting etc.) or internal errors caused by saturation of a resource (CPU, memory, disk I/O or database connections). It typically means the target system is close to its performance limit.
