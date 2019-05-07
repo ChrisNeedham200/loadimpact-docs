@@ -25,7 +25,6 @@ Smart Result Performance Alerts are alerts that intelligently analyze your resul
 
 This alert is raised when a throughput limit has been detected. The number of active in-flight requests continue to grow as the number of Virtual Users are increasing, while the request rate (finished requests) has flatlined. This is indicative that the system under test is overloaded, thus resulting in higher response times. We recommend that you correlate the performance bottleneck with data from an APM and/or server monitoring tool. After making changes, you should run your tests again at the same Virtual User level, to verify if your changes have improved performance on the system under test.
 
-Sample Result: <a href="https://app.loadimpact.com/k6/anonymous/1333df36a62848a7add1636c6cb99b46" target="_blank">Throughput Limit</a>
 ![Throughput limit example ]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/throughput-limit.png)
 
 ***
@@ -36,7 +35,6 @@ This alert is raised when a period of elevated HTTP errors has been detected (10
 
 **Note:** Failed responses are often returned much faster than successful reponses. Consequently, an increased HTTP error rate may produce misleading request rate and response time metrics.
 
-Sample Result: <a href="https://app.loadimpact.com/k6/anonymous/82e943f60e9e471cbe0343497748f6aa" target="_blank">Too many HTTP Failures</a>
 ![Too many HTTP failures]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/too-many-http-failures.png)
 
 ***
