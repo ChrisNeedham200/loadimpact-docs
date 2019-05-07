@@ -29,13 +29,13 @@ This alert is raised when a throughput limit has been detected. The number of ac
 
 ***
 
-### Too Many HTTP Failures
+### Increased HTTP failure rate
 
 This alert is raised when a period of elevated HTTP errors has been detected (10% higher than in the beginning of the test). There could be a number of reasons for this, e.g. web server configuration (timeouts, rate limiting etc.) or internal errors caused by saturation of a resource (CPU, memory, disk I/O or database connections). It typically means the target system is close to its performance limit.
 
-**Note:** Failed responses are often returned much faster than successful reponses. Consequently, an increased HTTP error rate may produce misleading request rate and response time metrics.
+**Note:** Failed responses are often returned much faster than successful responses. Consequently, an increased HTTP error rate may produce misleading request rate and response time metrics.
 
-![Too many HTTP failures]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/too-many-http-failures.png)
+![Increased HTTP failure rate]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/too-many-http-failures.png)
 
 ***
 
