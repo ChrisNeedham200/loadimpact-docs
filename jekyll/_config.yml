@@ -23,7 +23,7 @@ collections:
     permalink: /3.0/:path/
     prefix: "/3.0"
     selectorName: "3.0"
-    description: "Documentation for LoadImpact 3.0, our completely web based product with scirting in Lua, in operation since 2011. As of Feb 1 2019, v3.0 is not available to new users. This documentation is provided for existing users."
+    description: "Documentation for LoadImpact 3.0, our completely web based product with scripting in Lua, in operation since 2011. As of Feb 1 2019, v3.0 is not available to new users. This documentation is provided for existing users."
     order: 1
   v4:
     name: "4.0 (k6/JS) Docs"
