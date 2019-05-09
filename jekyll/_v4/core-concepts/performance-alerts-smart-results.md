@@ -102,6 +102,33 @@ http.get("http://test.loadimpact.com/?ts=" + Math.floor(Math.random() * Math.flo
 
 ***
 
+### Too Many Groups
+
+**This is an informational alert, we recommend reviewing how you use the <a href="https://docs.k6.io/docs/group-name-fn-cond" target="_blank">group API</a> in your test script.**
+
+This alert is raised when we <b>detect a high number of group</b> in your test script.  The most common reason for this alert is an incorrect usage of the <a href="https://docs.k6.io/docs/group-name-fn-cond" target="_blank">group API</a> using it for aggregating different HTTP requests, or within a loop statement.
+
+Groups are meant to organize and provide an overview of your result tests allowing you a BDD-style of testing. By allowing this organization, you can quickly find specific parts of your test. For example, the point where users are on a certain page or taking specific actions.
+
+{% highlight js linenos %}
+import { group } from "k6";
+
+export default function() {
+  group("user flow: returning user", function() {
+    group("visit homepage", function() {
+      // load homepage resources
+    });
+    group("login", function() {
+      // perform login
+    });
+  });
+};
+{% endhighlight %}
+
+If you want to group multiple HTTP requests, we suggest you use the <a href="https://docs.k6.io/docs/http-requests#section-aggregating-results-for-http-requests" target="_blank">URL grouping feature of k6</a> to group requests from URLs with a common base together.
+
+***
+
 ### High Load Generator CPU Usage
 
 This alert is raised when we detect high utilization of the load generator CPU during a test. Over utilization of the load generator can skew your test results producing data that varies from test to test and unpredictably. Virtual Users will naturally try to execute as quickly as possible. The exact cause of over utilization can vary, but is likely due to one of the following reasons:
