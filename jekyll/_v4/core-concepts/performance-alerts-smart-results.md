@@ -88,9 +88,9 @@ Refer to: [Why should I filter domains?]({{ site.baseurl }}/4.0/frequently-asked
 
 **This is an informational alert, we strongly recommend you group dynamic URLs as it will make analysis easier**
 
-This alert is raised when we detect more than 500 unique URLs in your test results. This is commonly caused by a URL that contains a query parameter that is unique per iteration. e.g. tokens, session IDs, etc. You should utilize the <a href="https://docs.k6.io/docs/http-requests#section-aggregating-results-for-http-requests" target="_blank">URL grouping feature of k6</a> to combine these unique URLs into a single metrics.
+This alert is raised when we detect more than 500 unique URLs in your test results. This is commonly caused by a URL that contains a query parameter that is unique per iteration. e.g. tokens, session IDs, etc. You should utilize the <a href="https://docs.k6.io/docs/http-requests#section-aggregating-results-for-http-requests" target="_blank">URL grouping feature of k6</a> to aggregate data from dynamic URLs into a single URL metric.
 
-In the following example, our query parameter would produce large number of unique URLs: 
+In the following example, our query parameter would produce large number of URL metrics:
 
 {% highlight js linenos %}
 for (var id = 1; id <= 600; id++) {
@@ -99,7 +99,7 @@ for (var id = 1; id <= 600; id++) {
 {% endhighlight %}
 ![Too Many URLs - Dynamic URLs]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/insights-no-url-grouping.png)
 
-But you can group these all together in our result analysis using the <b>name tag</b>, making it easier for you to interpret the data.
+But you can group all these URL metrics together in our result analysis using the <b>name tag</b>, making it easier for you to interpret the data.
 
 {% highlight js linenos %}
 for (var id = 1; id <= 600; id++) {
@@ -135,7 +135,7 @@ export default function() {
 };
 {% endhighlight %}
 
-If you want to group multiple HTTP requests, we suggest you use the <a href="https://docs.k6.io/docs/http-requests#section-aggregating-results-for-http-requests" target="_blank">URL grouping feature of k6</a> to group requests from URLs with a common base together.
+If you want to group multiple HTTP requests, we suggest you use the <a href="https://docs.k6.io/docs/http-requests#section-aggregating-results-for-http-requests" target="_blank">URL grouping feature of k6</a> to aggregate data into a single URL metric.
 
 ***
 
