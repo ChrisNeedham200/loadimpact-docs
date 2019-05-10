@@ -43,7 +43,7 @@ This alert is raised when a period of elevated HTTP errors has been detected (10
 
 The total number of HTTP(s) errors is higher than 15% during the first 100 completed script iterations.
 
-Errors that occur early on are typically not considered to be performance related. Our automated algorithms also have not detected an increase in the error rate as load has increased.
+Errors that occur early on are typically not considered to be performance related. Our algorithms also have not detected an increase in the error rate as load has increased.
 With that in mind, there are a number of non-performance related reasons for errors, which includes, but is not limited to:
 
 - You're making invalid requests:
@@ -57,7 +57,7 @@ With that in mind, there are a number of non-performance related reasons for err
 
 ### Not Enough Training Data
 
-This alert is raised because our Smart Results performance alert algorithms need at least 100 complete VU iterations of training data plus an additional 15 seconds to produce meaningful output. Your test did not complete the 100 VU iterations necessary for the training data. We recommend increasing the test duration to get the full benefits of performance alerts
+This alert is raised because our Smart Results algorithms need at least 100 complete VU iterations of training data plus an additional 15 seconds to produce meaningful output. Your test did not complete the 100 VU iterations necessary for the training data. We recommend increasing the test duration to get the full benefits of performance alerts.
 
 Sample result: <a href="https://app.loadimpact.com/k6/anonymous/1026ecd031c0481eaaed1bb4312f2509" target="_blank">Not enough training data</a>
 
