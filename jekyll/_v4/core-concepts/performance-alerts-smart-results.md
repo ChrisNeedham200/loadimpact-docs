@@ -29,6 +29,16 @@ This alert is raised when a throughput limit has been detected. The number of ac
 
 ***
 
+### Increased HTTP failure rate
+
+This alert is raised when a period of elevated HTTP errors has been detected (10% higher than in the beginning of the test). There could be a number of reasons for this, e.g. web server configuration (timeouts, rate limiting etc.) or internal errors caused by saturation of a resource (CPU, memory, disk I/O or database connections). It typically means the target system is close to its performance limit.
+
+**Note:** Failed responses are often returned much faster than successful responses. Consequently, an increased HTTP error rate may produce misleading request rate and response time metrics.
+
+![Increased HTTP failure rate]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/too-many-http-failures.png)
+
+***
+
 ### High HTTP failure rate
 
 The total number of HTTP(s) errors is higher than 15% during the first 100 completed script iterations.
@@ -44,16 +54,6 @@ With that in mind, there are a number of non-performance related reasons for err
 - You're hitting a rate limit.
 
 **Note:** Failed responses are often returned much faster than successful responses.
-
-### Increased HTTP failure rate
-
-This alert is raised when a period of elevated HTTP errors has been detected (10% higher than in the beginning of the test). There could be a number of reasons for this, e.g. web server configuration (timeouts, rate limiting etc.) or internal errors caused by saturation of a resource (CPU, memory, disk I/O or database connections). It typically means the target system is close to its performance limit.
-
-**Note:** Failed responses are often returned much faster than successful responses. Consequently, an increased HTTP error rate may produce misleading request rate and response time metrics.
-
-![Increased HTTP failure rate]({{ site.baseurl }}/assets/img/v4/result-analysis/smart-results/too-many-http-failures.png)
-
-***
 
 ### Not Enough Training Data
 
