@@ -261,10 +261,7 @@ See Also:
 - k6 docs on [thresholds](https://docs.k6.io/docs/thresholds) for more information.
 
 
-<<<<<<< HEAD:jekyll/_v4/core-concepts/thresholds.md
 **Next**: [Tags]({{ site.baseurl }}/4.0/core-concepts/tags/)
-=======
->>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/thresholds.md
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNzQyMTE1MjEyXX0=
 -->

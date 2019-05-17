@@ -13,7 +13,7 @@ redirect_from:
 
 <h2>Background</h2>
 
-Different types of performance tests serve to provide different information about the System Under Test(SUT). You can run different tests by altering the rampig patterns used in the test script. Ramping patterns can be directly defined in the global options of your k6 script. You may want to configure different ramping patterns based on what you want to learn from your test. The following examples are some of the most popular and commonly used configurations. You should adjust the Virtual Users and duration to fit your individual needs.
+Different types of performance tests serve to provide different information about the System Under Test(SUT). You can run different tests by altering the ramping patterns used in the test script. Ramping patterns can be directly defined in the global options of your k6 script. You may want to configure different ramping patterns based on what you want to learn from your test. The following examples are some of the most popular and commonly used configurations. You should adjust the Virtual Users and duration to fit your individual needs.
 
 
 - TOC

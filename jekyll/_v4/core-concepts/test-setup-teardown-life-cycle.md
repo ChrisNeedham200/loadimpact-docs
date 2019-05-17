@@ -62,9 +62,4 @@ export default function(setupData) {
     You can only return JSON compatible data types from the <code>setup()</code> function, as the returned data is serialized to JSON before being passed to the main and <code>teardown()</code> functions. In the <a href="/4.0/guides/cloud-execution/" class="alert-link">Cloud Execution</a> case the data will be extracted from the cloud server that runs the <code>setup()</code> function and distributed to all other cloud servers and passed to the main and <code>teardown()</code> functions.
 </div>
 
-<<<<<<< HEAD:jekyll/_v4/core-concepts/test-setup-teardown-life-cycle.md
 See the k6 docs on the [test life cycle](https://docs.k6.io/docs/test-life-cycle) for more information.
-=======
-See also:
-- k6 docs on the [test life cycle](https://docs.k6.io/docs/test-life-cycle) for more information.
->>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/test-setup-teardown-life-cycle.md

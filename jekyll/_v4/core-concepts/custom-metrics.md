@@ -98,10 +98,7 @@ export default function() {
 See Also:
 - k6 docs on [custom metrics](https://docs.k6.io/docs/result-metrics#section-custom-metrics) for additional information.
 
-<<<<<<< HEAD:jekyll/_v4/core-concepts/custom-metrics.md
 **Next**: [Ramping configurations]({{ site.baseurl }}/4.0/core-concepts/load-test-ramping-configurations/)
-=======
->>>>>>> f1a3e4eb10e61d3a842f8aed5ca3598aea065855:jekyll/_v4/core-concepts/custom-metrics.md
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTkwMTQ4Njc5OV19
 -->
