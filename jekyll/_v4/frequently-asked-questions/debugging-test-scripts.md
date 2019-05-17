@@ -46,7 +46,7 @@ Example: `k6 run myScript.js -i 1 -u 1`
 
 ## Tip 4: Use builtin debugging options
 
-Sometimes you need to understand more details about the requests being sent and response received.  Using ``--http-debug` as a flag allows you to do just that.  You can also print full response bodies by using `--http-debug="full"`
+Sometimes you need to understand more details about the requests being sent and response received.  Using `--http-debug` as a flag allows you to do just that.  You can also print full response bodies by using `--http-debug="full"`
 
 Example:  `k6 run myScript.js --http-debug="full"`
 
