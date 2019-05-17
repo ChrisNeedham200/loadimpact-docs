@@ -47,8 +47,25 @@ See the k6 docs on [init code](https://docs.k6.io/docs/test-life-cycle#section-i
 
 ### VU code
 
-The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing from the top of this [main function]({{ site.baseurl }}{ % link _v4/core-concepts/default-function %})
+The VU code is the code that contains the actual testing logic. This code is executed from top to bottom. If you have test duration that is longer than the time it takes to run through one iteration of the VU code it will loop, and start executing again from the top of this [default function]({{ site.baseurl }}/4.0/core-concepts/default-function) over and over until the test duration finalizes.
+
+{% highlight js linenos %}
+export default function(data) {
+
+}
+{% endhighlight %}
 
 ### Setup/teardown life-cycle hooks
 
 The `setup()` and `teardown()` functions are life-cycle hooks that are run once pre and post test respectively. See article on [setup/teardown life-cycle hooks]({{ site.baseurl }}/4.0/core-concepts/test-setup-teardown-life-cycle) for more details.
+
+
+{% highlight js linenos %}
+export function setup() {
+
+}
+
+export function teardown(data) {
+
+}
+{% endhighlight %}
