@@ -48,7 +48,7 @@ import { Rate } from "k6/metrics";
 export let errorRate = new Rate("errors");
 
 export default function() {
-  var url = "http://api.dev.loadimpact.com/v3/users";
+  var url = "http://api.dev.loadimpact.com/v3/users";  // This URL is provided for example purposes only
   var params = {
       headers: {
           "Authorization": "Token ffc62b27db68502eebc6e90b7c1476d29c581f4d",
