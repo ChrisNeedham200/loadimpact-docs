@@ -158,10 +158,6 @@ export let options = {
 {% endhighlight %}
 <ol start="2"><li>You can set the <code>K6_CLOUD_PROJECT_ID</code> environment variable when running the test.</li></ol>
 
-<div class="callout callout-warning" role="alert">
-Oct 31st 2018: A bug has been identified in all recent versions of k6 that prevents the <code>K6_CLOUD_PROJECT_ID</code> environment variable from being properly applied. The only way to use this environment variable properly is to build k6 from source or use the <code>loadimpact/k6:latest</code> Docker image. Alternatively you can use option 1) and specifying the project ID in the script as shown above.
-</div>
-
 You find the ID of a LoadImpact project by selecting a k6 project in the UI and looking in the URL bar of your browser, the `12345` in `https://app.loadimpact.com/projects/12345/dashboard` is the project ID.
 
 ***
