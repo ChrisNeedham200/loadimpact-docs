@@ -14,7 +14,7 @@ redirect_from:
 
 <h2>Background</h2>
 
-LoadImpact's definition of Virtual Users(VUs) along with supplemnental information to cover common questions about VUs.
+LoadImpact's definition of Virtual Users(VUs) along with supplemental information to cover common questions about VUs.
 
 ***
 
