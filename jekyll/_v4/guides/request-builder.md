@@ -61,7 +61,7 @@ Declare a variable `userToken` that can be used for authorized consecutive reque
 
 Create checks to verify that
 1. HTTP status code is 200
-2. The property token is present in the data returned from the server
+2. The property `token` is present in the data returned from the server
 ![create checks]({{ site.baseurl }}/assets/img/v4/guides/request-builder/advanced-test-4.png)
 
 Add a new post request to create a resource
@@ -208,7 +208,7 @@ Using variables as query parameter can be accomplished in two ways, either add t
 ## Sending a payload
 In some cases you might want to make a request to create or update a resource, you can easily create a configuration for this.
 Select a HTTP method that supports a request payload then select what type of data you want to send.
-There are three different choices _JSON_, _text_ and _file content_.
+There are three different choices __JSON__, __text__ and __file content__.
 
 * __JSON__ - send a JSON data structure to your api.
 ![payload json]({{ site.baseurl }}/assets/img/v4/guides/request-builder/payload-json.png)
