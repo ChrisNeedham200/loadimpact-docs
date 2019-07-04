@@ -47,8 +47,8 @@ If you are not familiar with these settings here are a couple of links for you.
 -----------
 
 ## Advanced usage
-Creating a test with payloads, headers, authentication and asserts might sound scary but is actually pretty straight forward.
-In the following example we will authenticate, declare [variables](#variables), set [headers](#headers), [send JSON data](#sending-a-payload) to create and update resources, delete resources and make [checks](#checks) to validate HTTP response codes response data.
+Creating a test with payloads, headers, authentication and asserts might sound difficult but with the request builder UI it is actually pretty straight forward.<br>
+In the following example we will authenticate, declare [variables](#variables), set [headers](#headers), [send JSON data](#sending-a-payload) to create and update resources, delete resources and make [checks](#checks) to validate HTTP response codes and verifu response data values.
 
 Add a JSON payload to send with the request
 ![add payload]({{ site.baseurl }}/assets/img/v4/guides/request-builder/advanced-test-1.png)
@@ -130,7 +130,9 @@ In some situations it is useful to use the data was returned in one of the previ
 ### Declaring variables
 Variables require two things a _name_ of which the variable will be available as in consecutive requests and an _expression_ to know what value to assign the variable.
 
-There are two different expression types you can use when defining variables [JSONpath](#jsonpath) and [Regex](#regex).
+There are two different expression types you can use when defining variables
+* [JSONPath](#jsonpath)
+* [Regex](#regex)
 
 #### JSONpath
 Specifying a "JSON path" of which the value you wish to assign the variable is.
