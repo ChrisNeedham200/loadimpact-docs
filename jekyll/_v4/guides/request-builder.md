@@ -48,7 +48,7 @@ If you are not familiar with these settings here are a couple of links for you.
 
 ## Advanced usage
 Creating a test with payloads, headers, authentication and asserts might sound scary but is actually pretty straight forward.
-In the following example we will authenticate, declare [variables](#variables), set [headers](#headers) and [send JSON data](#sending-a-payload) to create and update resources, delete resources and make [checks](#checks) to validate HTTP response codes and data structures.
+In the following example we will authenticate, declare [variables](#variables), set [headers](#headers), [send JSON data](#sending-a-payload) to create and update resources, delete resources and make [checks](#checks) to validate HTTP response codes response data.
 
 Add a JSON payload to send with the request
 ![add payload]({{ site.baseurl }}/assets/img/v4/guides/request-builder/advanced-test-1.png)
