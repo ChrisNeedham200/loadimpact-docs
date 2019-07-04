@@ -29,10 +29,10 @@ In this guide we will go through the mechanics and parts of the LoadImpact reque
 <!-- If are not familiar with JavaScript but need to load test your API, single endpoint or website  -->
 
 ## Basic usage
-Creating a single endpoint test is dead simple, all that is required is basically the url you want to test.
-If the "run test" button is enabled it means that the configuration is solid and can be run. Hit the run button and the test will start running.
-In the following example we will
-Make requests to an endpoint and check that the HTTP status code is _200 OK!_.
+Creating a single endpoint test is dead simple, all that is required is basically the `URL` you want to test.<br>
+If the _run test_ button is enabled it means that the configuration is solid and can be run. Hit _run test_ and the test will start running.<br>
+
+The following example is a simple test hitting one endpoint and making sure that the HTTP status code is _200 OK_.
 ![basic test]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test.png)
 ![basic test loading]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test-loading.png)
 ![basic test starting]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test-starting.png)
@@ -106,7 +106,7 @@ Hit save and run and the test will start running.
 -----------
 
 ## Bailing out of the UI
-The request builder UI i pretty flexible and can be configured in many different ways. Would you reach a point where you cannot configure the test in the way you want you can always drop down into JavaScript and modify the code directly.
+The request builder UI is pretty flexible and can be configured in many different ways. Would you reach a point where you cannot configure the test in the way you want you can always drop down into JavaScript and modify the code directly.
 By switching over to the _script preview mode_ you can press the "create test from script" button, this will create a new test based on your configuration.
 ![javascript]({{ site.baseurl }}/assets/img/v4/guides/request-builder/script-preview.png)
 
