@@ -291,7 +291,7 @@ To quickly populate the request builder UI you can import a [HAR file](http://ww
 
 -----------
 
-## Tips and ticks
+## Tips and tricks
 
 __Change order of requests__<br>
 Hover the request and a ![varr]({{ site.baseurl }}/assets/img/v4/guides/request-builder/varr.png) will appear, click and drag this symbol to change order of your requests<br>
