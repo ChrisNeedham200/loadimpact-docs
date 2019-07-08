@@ -110,8 +110,8 @@ Hit save and run and the test will start running.
 -----------
 
 ## Bailing out of the UI
-The request builder UI is pretty flexible and can be configured in many different ways. Would you reach a point where you cannot configure the test in the way you want you can always drop down into JavaScript and modify the code directly.
-By switching over to the _script preview mode_ you can press the "create test from script" button, this will create a new test based on your configuration.
+The request builder UI is pretty flexible and can be configured in many different ways. Would you reach a point where you cannot configure the test in the way you want you can always drop down into JavaScript and modify the code directly.<br>
+Switch over to _script preview mode_ and press the _create test from script_ button to create a JavaScript test based on the current configuration.
 ![javascript]({{ site.baseurl }}/assets/img/v4/guides/request-builder/script-preview.png)
 
 -----------
