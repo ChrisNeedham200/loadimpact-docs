@@ -13,6 +13,7 @@ Going from zero to hero in load testing without breaking a sweat.
 In this guide we will go through the mechanics and parts of the LoadImpact request builder UI.
 
 * [Basic usage](#basic-usage)
+  * [Configuring load settings](#configuring-load-settings)
 * [Advanced usage](#advanced-usage)
 * [Bailing out of the UI](#bailing-out-of-the-ui)
 * [Request headers](#request-headers)
@@ -30,15 +31,20 @@ In this guide we will go through the mechanics and parts of the LoadImpact reque
 
 ## Basic usage
 Creating a single endpoint test is dead simple, all that is required is basically the `URL` you want to test.<br>
-If the _run test_ button is enabled it means that the configuration is solid and can be run. Hit _run test_ and the test will start running.<br>
+If the _run test_ button is enabled it means that the configuration is solid and can be run. Hit _run test_ and the test will start running with default load settings.
+
+Would you want to change the _load settings_ check out [configuring load settings](#configuring-load-settings).
 
 The following example is a simple test hitting one endpoint and making sure that the HTTP status code is __200__.
 ![basic test]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test.png)
 ![basic test loading]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test-loading.png)
 ![basic test starting]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test-starting.png)
+
+#### Configuring load settings
 If you want to change the duration of the test and how much load it should generate press the _configure_ button and a config screen will appear.
 ![load test config]({{ site.baseurl }}/assets/img/v4/guides/request-builder/load-config.png)
-In this screen you can change the duration of the test, how many VUs (virtual users or "traffic" "load") you want, the ramping profile (how the traffic is ramped up and down) and from what geographical regions the load should be generated from.
+In this screen you can change the __duration__ of the test, how many __VUs__ (virtual users or "traffic") you want, the __ramping profile__ (how traffic is increased and decreased during the test) and what __load zones__ (geographical regions) the load should be generated from.
+
 If you are not familiar with these settings here are a couple of links for you:
 * [What are VUs?]({{ site.baseurl }}/4.0/core-concepts/what-are-virtual-users/#what-are-vus-virtual-users)
 * [Ramping configurations]({{ site.baseurl }}/4.0/core-concepts/types-of-load-performance-tests)
