@@ -58,6 +58,23 @@ export default function(setupData) {
 }
 {% endhighlight %}
 
+### Timeout
+
+`setup()` and `teardown()` functions have a default timeout of 10 seconds. If you plan to do heavy workload (such as creating multiple accounts or making slow requests) in these functions, you should condigure a larger timeout in the `options` .
+
+{% highlight js linenos %}
+export function setup() {
+    let data = { message: "Hello world!" };
+    return data;
+}
+export let options = {
+    setupTimeout: '30s',
+    teardownTimeout: '30s',
+}
+{% endhighlight %}
+
+
+
 <div class="callout callout-warning" role="alert">
     You can only return JSON compatible data types from the <code>setup()</code> function, as the returned data is serialized to JSON before being passed to the main and <code>teardown()</code> functions. In the <a href="/4.0/guides/cloud-execution/" class="alert-link">Cloud Execution</a> case the data will be extracted from the cloud server that runs the <code>setup()</code> function and distributed to all other cloud servers and passed to the main and <code>teardown()</code> functions.
 </div>
