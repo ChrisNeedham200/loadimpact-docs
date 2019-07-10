@@ -60,12 +60,11 @@ export default function(setupData) {
 
 ### Timeout
 
-`setup()` and `teardown()` functions have a default timeout of 10 seconds. If you plan to do heavy workload (such as creating multiple accounts or making slow requests) in these functions, you should condigure a larger timeout in the `options` .
+`setup()` and `teardown()` functions have a default timeout of 10 seconds. If you plan to do heavy workload (such as creating multiple accounts or making slow requests) in these functions, you should configure a larger timeout in the `options`.
 
 {% highlight js linenos %}
 export function setup() {
-    let data = { message: "Hello world!" };
-    return data;
+  // slow requests... 
 }
 export let options = {
     setupTimeout: '30s',
