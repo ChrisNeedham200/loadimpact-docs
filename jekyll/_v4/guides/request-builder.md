@@ -9,7 +9,16 @@ redirect_from: /4.0/guides/load-impact-request-builder/
 
 ***
 
-Going from zero to hero in load testing without breaking a sweat.
+<h2>Background</h2>
+The LoadImpact request builder is fast and easy way to build tests in LoadImpact
+with minimal scripting. You simply input the endpoints, and required parameters
+and we will build the script for you. You can even specify [Checks](#checks),
+correlate [variables](#variables), and more.
+
+In the words of our developer, Simon, who built it, "Go from zero to hero in load testing without breaking a sweat."
+
+***
+
 In this guide we will go through the mechanics and parts of the LoadImpact request builder UI.
 
 * [Basic usage](#basic-usage)
@@ -31,21 +40,21 @@ In this guide we will go through the mechanics and parts of the LoadImpact reque
 
 ## Basic usage
 Creating a single endpoint test is dead simple, all that is required is basically the `URL` you want to test.<br>
-If the _run test_ button is enabled it means that the configuration is solid and can be run. Hit _run test_ and the test will start running with default load settings.
+If the _run test_ button is enabled it means that the configuration is valid and can be run. Hit _run test_ and the test will start running with default load settings.
 
-Would you want to change the _load settings_ check out [configuring load settings](#configuring-load-settings).
+Would you want to change the _load settings_ refer to [configuring load settings](#configuring-load-settings).
 
-The following example is a simple test hitting one endpoint and making sure that the HTTP status code is __200__.
+The following example is a simple test that requests one endpoint and [checks](#checks) that the HTTP status code is __200__.
 ![basic test]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test.png)
 ![basic test loading]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test-loading.png)
 ![basic test starting]({{ site.baseurl }}/assets/img/v4/guides/request-builder/basic-test-starting.png)
 
 #### Configuring load settings
-If you want to change the duration of the test and how much load it should generate press the _configure_ button and a config screen will appear.
+If you want to change the duration of the test and/or how many VUs are used, press the _configure_ button and a config screen will appear.
 ![load test config]({{ site.baseurl }}/assets/img/v4/guides/request-builder/load-config.png)
 In this screen you can change the __duration__ of the test, how many __VUs__ (virtual users or "traffic") you want, the __ramping profile__ (how traffic is increased and decreased during the test) and what __load zones__ (geographical regions) the load should be generated from.
 
-If you are not familiar with these settings here are a couple of links for you:
+If you are not familiar with these concepts please refer to these articles:
 * [What are VUs?]({{ site.baseurl }}/4.0/core-concepts/what-are-virtual-users/#what-are-vus-virtual-users)
 * [Ramping configurations]({{ site.baseurl }}/4.0/core-concepts/types-of-load-performance-tests)
 * [Available load zones]({{ site.baseurl }}/4.0/guides/cloud-execution/#load-zones)
@@ -53,8 +62,8 @@ If you are not familiar with these settings here are a couple of links for you:
 -----------
 
 ## Advanced usage
-Creating a test with payloads, headers, authentication and asserts might sound difficult but with the request builder UI it is actually pretty straight forward.<br>
-In the following example we will authenticate, declare [variables](#variables), set [headers](#request-headers), [send JSON data](#sending-a-payload) to create and update resources, delete resources and make [checks](#checks) to validate HTTP response codes and verifu response data values.
+Creating a test with payloads, headers, authentication and asserts might sound difficult and tedious. The request builder UI makes it very straight forward.<br>
+In the following example we will authenticate, declare [variables](#variables), set [headers](#request-headers), [send JSON data](#sending-a-payload) to create and update resources, delete resources and make [checks](#checks) to validate HTTP response codes and verify response data values.
 
 Add a JSON payload to send with the request
 ![add payload]({{ site.baseurl }}/assets/img/v4/guides/request-builder/advanced-test-1.png)
@@ -105,7 +114,7 @@ Check the status code to see that it is __204__
 This is what the final result looks like.<br>
 You can switch over to code mode and preview the Javascript generated from your config, you switch mode by clicking the `</>` symbol in the top right corner.
 
-If you want to do even more advanced things you can create a test based on your configuration too! Check out the [Bailing out of the UI](#bailing-out-of-the-ui) section if that sounds interesting.
+If you want to do even more advanced things you can create a test based on your configuration too! Check out the following [Bailing out of the UI](#bailing-out-of-the-ui) section for more information.
 ![final result]({{ site.baseurl }}/assets/img/v4/guides/request-builder/advanced-test-15.png)
 
 Hit __run test__ to run with default load settings or __configure__ to change settings like [duration]({{ site.baseurl }}/4.0/reference/test-configuration-options/#duration), [VUs (virtual users)]({{ site.baseurl }}/4.0/core-concepts/what-are-virtual-users/#what-are-vus-virtual-users), [load ramping profile]({{ site.baseurl }}/4.0/core-concepts/types-of-load-performance-tests) or geographical [load zones]({{ site.baseurl }}/4.0/guides/cloud-execution/#load-zones).
@@ -116,14 +125,14 @@ Hit save and run and the test will start running.
 -----------
 
 ## Bailing out of the UI
-The request builder UI is pretty flexible and can be configured in many different ways. Would you reach a point where you cannot configure the test in the way you want you can always drop down into JavaScript and modify the code directly.<br>
-Switch over to _script preview mode_ and press the _create test from script_ button to create a JavaScript test based on the current configuration.
+The request builder UI is flexible and can be configured in many different ways. If you reach a point where you cannot configure the test in the way you want you can always drop down into JavaScript and modify the code directly.<br>
+Switch over to _script preview mode_ and press the _create test from script_ button to create a JavaScript test based on the current configuration. This will create a new test script based on the code in the request builder. Your request builder script will not be altered. You may find this helpful if you need to add more advanced business logic to your test.
 ![javascript]({{ site.baseurl }}/assets/img/v4/guides/request-builder/script-preview.png)
 
 -----------
 
 ## Request headers
-Add information about the client or the resource being fetched. Set a Authorization header with access token to make authorized requests to your API.
+Add information about the client or the resource being fetched. Set an Authorization header with access token to make authorized requests to your API.
 ![using headers]({{ site.baseurl }}/assets/img/v4/guides/request-builder/using-headers.png)
 
 ----------
@@ -135,7 +144,7 @@ Query parameters can either be added in this panel or typed directly in the URL.
 ----------
 
 ## Variables
-In some situations it is useful to utilize the data returned in one of the previous request, here is where variable come in handy.
+In some situations it is useful to utilize the data returned in one of the previous request, such as a token or other dynamic data, this is where variables come in handy.
 * [Declaring variables](#declaring-variables)
 * [Using variables](#using-variables)
 
@@ -147,7 +156,7 @@ There are two different expression types you can use when defining variables
 * [Regex](#regex)
 
 #### JSONpath
-Specifying the path to a property in the JSON data structure for which you want to assing the variable.
+Specifying the path to a property in the JSON data structure for which you want to assigning the variable.
 The JSONPath expression always starts with a `$.` followed by the path to the value.
 
 Here is an example:
@@ -165,12 +174,12 @@ __Data returned from server__
 __Corresponding JSONpath for `name` and `token`__<br>
 ![json path example]({{ site.baseurl }}/assets/img/v4/guides/request-builder/variable-definition-jsonpath.png)
 
-You can read more about JSONPath syntax [here](https://github.com/dchester/jsonpath#jsonpath-syntax).
+For more information on JSONPath syntax refer to the repo [here](https://github.com/dchester/jsonpath#jsonpath-syntax).
 
 
 #### Regex
 Specifying a regular expression. This can be useful if the data returned is not JSON but for example plain text.<br>
-If you are not familiary with regular expressions, here are some useful links for you:
+If you are not familiar with regular expressions, here are some useful links for you:
 * [Regex validator](https://regex101.com)
 * [Regex Cheat Sheet](https://www.rexegg.com/regex-quickstart.html)
 
@@ -198,7 +207,7 @@ Variables can be used in many different ways, here is a complete list of how you
 <!-- Places allowing for the use of variables are [headers](headers), [request payload](sending-a-payload-to-your-endpoint), [query parameters](query-parameters) and in the [url](url). -->
 
 
-* __Headers__ - this is probably the most common usecase, using a token to make authorized request to protected endpoints.
+* __Headers__ - this is probably the most common use case, using a token to make authorized request to protected endpoints.
 ![using variable in headers]({{ site.baseurl }}/assets/img/v4/guides/request-builder/variable-headers.png)
 
 * __URL__ - using one of the declared variables as a part of the request URL.<br>
@@ -233,10 +242,10 @@ There are three different choices __JSON__, __text__ and __file content__.
 ----------
 
 ## Checks
-Checks are like asserts, simple pass or fail conditions.
+Checks are like asserts, simple pass or fail conditions. They will not halt execution of your test.
 Checks are great for codifying assertions relating to HTTP requests/responses, making sure the response code is 2xx for example.
 
-There multiple type of checks you can add and each one of them have their place. These are the different types of checks available:
+There are multiple types of checks you can add. These are the different types of checks available:
 
 __HTTP status code__ - this is more of a shorthand for the check type _text_.
 You can easily test that a status code is 2xx, 5xx and 4xx.. etc.
