@@ -22,12 +22,25 @@ LoadImpact is built around an open source load generator which also functions as
 
 ## Creating tests
 
-There are multiple ways to create tests within LoadImpact.  Depending on your need, you may want to choose one over the other. Some methods, such as `Enter Website URLs`, are focused on quickly running tests while other methods are focused on giving you fine control over test execution. Ideally, you should choose the method that meets the need for what you are testing at the moment and the data you are looking to get back.
+There are multiple ways to create tests within our web application. Most users leverage the web app to build their proofs of concept, get a feel for scripting/testing, or to quickly put load on their target system with minimal effort. As the needs and processes for testing APIs and user journeys varies, we've split this section into API Testing and Website/Web App testing. We recommend starting with the "Request Builder" for testing APIs and "Recording a Browser Session" when testing user journeys. In both cases, we will generate base scripts for you.  You may wish to edit them further to add business logic.
 
 To create a new test, click **Create New Test** in the left side bar. You will be presented with the following options for API or website testing:
 
-![Figure 1]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-new-test-choices.png)
+![Figure 1]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/create-new-test-choices-v2.png)
 
+## API Testing
+
+The LoadImpact Request builder was designed to make it as easy as possible to create working test scripts to test your APIs.  You can simply add your endpoints, select the HTTP method, and specify POST bodies, headers, and more.  You can also verify responses with Checks, save variables from a response to reuse later and more.  Best of all, you can also view the generated script to understand how all these things are implemented into a k6 script.  Once you are ready to move to running the test from the command line, simply save the script locally and run it. For a more in depth guide, please refer to our guide on [Using the Request Buider]({{ site.baseurl }}/4.0/guides/request-builder/)
+
+![Request Builder]({{ site.baseurl }}/assets/img/v4/getting-started/load-impact-trial-guide/advanced-test-1.png)
+
+If you are feeling adventurous, you can also jump right into scripting for API testing within the in app IDE or locally in your IDE of choice.
+
+## Website and Webapp testing
+
+LoadImpact's tools for testing websites and webapps focus on helping you generate scripts quickly so you don't have to write them by hand. The majority of users will choose to do a browser recording to create their test script. However if your use case is simple or you want to get right to looking at the results we offer, entering website urls may make sense for you.
+
+Browser recordings allow you to generate a script simply by browsing like a user would. We will capture all HTTP(s) requests made during your "session". You may need to edit the generated script if you've done more complex things, such as logins and form submissions to deal with hidden form fields, session tokens, and more.
 
 
 ### Enter Website URLs
