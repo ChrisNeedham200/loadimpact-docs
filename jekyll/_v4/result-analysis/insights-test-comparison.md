@@ -12,7 +12,13 @@ order: 6
 
 The test comparison feature built-in to Insights allows you to compare the results of two different test runs of the same test. You can compare high-level metrics and individual checks and URL endpoints. You may wish to compare against a previous test run to look for differences in results. Or you may be comparing against a known baseline.
 
+## Setting a baseline test
+
 Comparing results against a known [baseline]({{ site.baseurl }}{% link _v4/guides/general-methodology.md %}#phase-2---baseline-testing-scaling-your-tests-and-complex-cases) is a core part of the General Methodology for [performance testing]({{ site.baseurl }}{% link _v4/guides/general-methodology.md %}). Baseline tests are important as they allow you to compare against a control to look for differences. Baseline tests should produce enough load to contain meaningful data and ideal results.  In other words, a heavy stress test isn't a good baseline. Think much smaller.
+
+In order to set your baseline, open up the results for the test run you wish to be your baseline. Click on the three dots in the top right corner -> set as Baseline test run. Baseline tests are exempt from data retention policies.
+
+![Insights: Set a baseline]({{ site.baseurl }}/assets/img/v4/result-analysis/test-comparison/test-comparison-baseline.png)
 
 ## Selecting test run to compare against
 
