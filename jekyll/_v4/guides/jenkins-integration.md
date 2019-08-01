@@ -114,7 +114,7 @@ node {
     }
 
     stage ("test") {
-        env.K6CLOUD_TOKEN="INSERT_MY_API_TOKEN_HERE"
+        env.K6_CLOUD_TOKEN="INSERT_MY_API_TOKEN_HERE"
         if (isUnix()) {
             sh "k6 run --quiet -o cloud github.com/loadimpact/k6-circleci-example/loadtests/main.js"
         } else {
@@ -129,11 +129,11 @@ node {
 
 IMPORTANT: Before running, make sure k6 is installed in the executable PATH of your build node. Install instructions can be found in [here.]({{ site.baseurl }}/4.0/getting-started/hello-world/#download-and-install-k6)
 
-The code has three parts/stages. "Build stuff", "test", and "Done". If you are familiar with Jenkins pipelines, you are likely aware that the stages will be visible in Jenkins when you execute your pipeline. k6 will pick up the API key from the environment variable `K6CLOUD_TOKEN` when executed.
+The code has three parts/stages. "Build stuff", "test", and "Done". If you are familiar with Jenkins pipelines, you are likely aware that the stages will be visible in Jenkins when you execute your pipeline. k6 will pick up the API key from the environment variable `K6_CLOUD_TOKEN` when executed.
 
 The first stage, "Build Stuff" is just a placeholder in this example. The same is true for the last stage, "Done". In your implementation you will likely have a number of stages where you do different tasks or run other tests.
 
-In this example, the load test is triggered in the "test" stage. We first set our `K6K6CLOUD_TOKEN` as an environment variable, if you are following this example exactly, replace `INSERT_MY_API_TOKEN_HERE` with your actual token. Next, we check if the build node the pipeline is being executed on is a windows or unix box. We then execute the correct command based on the outcome of that.
+In this example, the load test is triggered in the "test" stage. We first set our `K6_CLOUD_TOKEN` as an environment variable, if you are following this example exactly, replace `INSERT_MY_API_TOKEN_HERE` with your actual token. Next, we check if the build node the pipeline is being executed on is a windows or unix box. We then execute the correct command based on the outcome of that.
 
 Note: This test will execute k6 locally, and stream results to the LoadImpact cloud service. Alternatively, you can execute solely on the LoadImpact cloud service by
 

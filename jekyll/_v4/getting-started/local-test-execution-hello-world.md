@@ -70,7 +70,7 @@ $ sudo yum install k6</code></pre>
 brew install k6</code></pre>
             </div>
             <div class="tab-pane fade" id="platform-tabs-content-windows" role="tabpanel" aria-labelledby="platform-tabs-link-windows">
-                <a href="https://dl.bintray.com/loadimpact/windows/k6-latest-amd64.msi">Download the latest k6 installer</a>
+                <a href="https://dl.bintray.com/loadimpact/windows/k6-v0.25.0-amd64.msi">Download the latest k6 installer</a>
             </div>
         </div>
     </div>
