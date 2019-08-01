@@ -58,4 +58,11 @@ Example:  `k6 run myScript.js --http-debug="full"`
 
 Sometimes it's just easier to print some information to the terminal window.  Feel free to use `console.log();` to print useful information to the terminal window. Perhaps you want to examine some JSON returned in a response, a specific response body, or even just know if you've correctly entered/exited loops or IF statements.
 
+To take the above a step further, consider the following snippet of code.  We are making a GET request, saving the response to `res` and then logging the complete response object. Now we can examine it to find exactly what we may be looking for to adapt our test script.
+
+{% highlight js linenos %}
+let res = http.get("http://httpbin.test.loadimpact.com/json");
+ console.log(JSON.stringify(res));
+{% endhighlight %}
+
 If you find it is useful for your testing to record if something has happened or not in a test.  You may want to consider using [Checks]({{ site.baseurl }}{% link _v4/core-concepts/checks.md %}) or [Custom Metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %}) to quantify the occurences.
