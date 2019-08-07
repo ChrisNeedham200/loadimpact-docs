@@ -83,6 +83,8 @@ Columbus, Ohio, US              | amazon:us:columbus
 Dublin, Ireland                 | amazon:ie:dublin
 Frankfurt, Germany              | amazon:de:frankfurt
 London, UK                      | amazon:gb:london
+Paris, France                   | amazon:fr:paris
+Stockholm, Sweden               | amazon:se:stockholm
 Montreal, Canada                | amazon:ca:montreal
 Mumbai, India                   | amazon:in:mumbai
 Palo Alto, California, US       | amazon:us:palo alto
@@ -91,6 +93,7 @@ Seoul, South Korea              | amazon:kr:seoul
 Singapore                       | amazon:sg:singapore
 Sydney, Australia               | amazon:au:sydney
 Tokyo, Japan                    | amazon:jp:tokyo
+Hong Kong, China                | amazon:cn:hong kong
 {: class="table table-striped"}
 
 
