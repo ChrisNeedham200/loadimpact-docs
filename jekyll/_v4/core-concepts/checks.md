@@ -31,7 +31,7 @@ export default function() {
 }
 {% endhighlight %}
 
-**Note:** In order to utilize custom metrics, you MUST `import { check } from "k6";` within the init context of your script.
+**Note:** In order to use `check`, you MUST `import { check } from "k6";` within the init context of your script.
 
 ***
 
