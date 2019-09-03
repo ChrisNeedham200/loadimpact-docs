@@ -111,13 +111,15 @@ Again, after prompted for your password, you can paste the following and save an
  </plist>
  ```
 
- All that is left after this is to reboot your Mac back to the Recovery Mode, open the Terminal, turn the SIP back on with `csrutil enable` and check if the limits were changed with commands we used at the beginning.
+All that is left after this is to reboot your Mac back to the Recovery Mode, open the Terminal, turn the SIP back on with `csrutil enable` and check if the limits were changed with commands we used at the beginning.
 
- In most cases these limits should be enough to run most of your simple tests locally for some time, but you can modify the files above to any values you will need in your testing.
+In most cases these limits should be enough to run most of your simple tests locally for some time, but you can modify the files above to any values you will need in your testing.
 
  **Note:** Those limitations are put in place to protect your operating system from files and applications that are poorly written and might leak memory like in huge quantities. We would suggest not going too overboard with the values, or you might find your system slowing down to a crawl if or when it runs out of RAM.
 
- One additional thing we can do in order to 'pump' more requests from your Mac is to configure the TIME_WAIT timeout setting for releasing the TCP sockets. This is a feature in TCP that ensures connections are closed cleanly. It requires one end of the connection to stay listening for a while after the socket has been closed.
+### Configuring TIME_WAIT timeout
+
+One additional thing we can do in order to 'pump' more requests from your Mac is to configure the TIME_WAIT timeout setting for releasing the TCP sockets. This is a feature in TCP that ensures connections are closed cleanly. It requires one end of the connection to stay listening for a while after the socket has been closed.
 
 By default MacOS has 16K ports available with a TIME_WAIT value of 15 seconds. You can check your currently set value with the following command:
 
