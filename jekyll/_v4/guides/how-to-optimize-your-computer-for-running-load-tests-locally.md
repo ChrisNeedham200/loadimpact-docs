@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: How to optimize your computer for running load tests locally
+title: How to Optimize your Computer for Running Load Tests Locally
 description: How to increase the limit of running processes and decrease the time each socket is occupied by the OS
 categories: [guides]
 order: 5
@@ -11,7 +11,6 @@ hide: true
 
 
 # Background
-
 
 A number of users while running their test scripts locally will run into limits within their OS which would prevent them from making the necessary number of requests to complete the test. This limit usually manifests itself in a form of **Too Many Open Files** error in MacOS or TODO for Linux.
 
