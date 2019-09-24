@@ -68,7 +68,7 @@ Once your first test results are in, refer to our articles on [Result Analysis](
 
 **I need to parameterize data from a JSON or CSV file, how do I do that?**
 In order to include external files in your test script, you would need to trigger your test from the command line. For purposes of a proof of concept, many users
-will create a table with necessary data in their test script before moving on to that.  We have code samples of parameterization [here]({{ site.baseurl }}/4.0//examples/parameterizing-data/).
+will create a table with necessary data in their test script before moving on to that.  We have code samples of parameterization [here]({{ site.baseurl }}/4.0/examples/parameterizing-data/).
 
 **I'm testing a site with form submissions and keep getting HTTP errors. Why isn't this working?**
 Assuming you've used one of the browser recording methods, you likely have captured a CSRF style token associated with your browser session.  You will need to write some
