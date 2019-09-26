@@ -1,17 +1,21 @@
 ---
 layout: classic-docs
-title: Insights overview
-description: An overview of LoadImpact Insights and how to utilize it to get actionable data from your load tests
+title: Interpreting results: An overview of LoadImpact Insights
+description: An in depth overview on how to interpret various result data in LoadImpact and k6
 categories: [result-analysis]
 order: 0
-redirect_from: /knowledgebase/articles/1172458-k6-insights-overview
+redirect_from:
+  - /knowledgebase/articles/1172458-k6-insights-overview
+  - /knowledgebase/articles/174121-how-do-i-interpret-test-results
+  - /knowledgebase/articles/173368-test-result-introduction
+  - /knowledgebase/topics/118848-test-results
 ---
 
 ***
 
 <h2>Background</h2>
 
-Insights is designed to be the perfect companion to [k6](https://k6.io/), a convenient and powerful solution for storing and analyzing your k6 test results.
+LoadImpact web based result analysis, Insights, is designed to be the perfect companion to [k6](https://k6.io/), a convenient and powerful solution for storing and analyzing your k6 test results.
 
 Continuous use of Insights will also enable the performance trending functionality to keep track of how the performance of your system changes over time. This is good for spotting performance regressions before they become a larger problems, ensuring you are within SLAs for requests and more, depending on your use case/need.
 
