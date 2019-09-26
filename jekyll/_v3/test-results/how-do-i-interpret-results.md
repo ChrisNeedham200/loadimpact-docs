@@ -4,10 +4,6 @@ title: How to Interpret Results
 description: Introduction on understanding and interpreting your LoadImpact load and performance test results
 categories: [test-results]
 order: 1
-redirect_from:
-  - /knowledgebase/articles/174121-how-do-i-interpret-test-results
-  - /knowledgebase/articles/173368-test-result-introduction
-  - /knowledgebase/topics/118848-test-results
 ---
 
 ***
