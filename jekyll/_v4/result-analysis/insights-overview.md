@@ -1,6 +1,6 @@
 ---
 layout: classic-docs
-title: Interpreting results: An overview of LoadImpact Insights
+title: Interpreting results - An overview of LoadImpact Insights
 description: An in depth overview on how to interpret various result data in LoadImpact and k6
 categories: [result-analysis]
 order: 0
