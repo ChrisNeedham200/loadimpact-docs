@@ -54,6 +54,7 @@
             }
         }
 
+
         .social-link {
             width: 32px;
             height: 32px;
@@ -85,6 +86,15 @@
                     left: 10px;
                 }
             }
+        }
+    }
+
+    .license-notice {
+        color: #68849a;
+        font-size: 13px;
+        a {
+            color: #68849a;
+            font-weight: bold;
         }
     }
 
