@@ -36,7 +36,13 @@ In both cases, after clicking "Schedule" you are presented with the following op
 
 ![]({{ site.baseurl }}/assets/img/v4/test-running/test-scheduling/schedule-options.png)
 
-Finally - we do recommend setting up notifications to complete an automated loop.  Schedule your test to run, and get notified of the results/completion of your test.
+Finally - we do recommend setting up [notifications]({{ site.baseurl }}/4.0/guides/notifications/) to complete an automated loop.  Schedule your test to run, and get notified of the results/completion of your test.
+
+***
+
+See Also:
+- [Notifications]({{ site.baseurl }}/4.0/guides/notifications/)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEwMzI5OTE2OTldfQ==
 -->
