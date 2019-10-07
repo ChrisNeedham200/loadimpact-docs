@@ -14,11 +14,6 @@ This article contains the various IP addresses LoadImpact uses to generate load 
 
 Other methods, such as header or query parameter whitelisting, may also fit your requirements. Refer to [this article]({{ site.baseurl }}/4.0/how-to-tutorials/how-to-open-firewall-to-load-impact-only/) for more information on those methods.
 
-
-**The main loadimpact.com IP address:**
-
-52.4.55.233 - Ashburn
-
 ### Load Zones
 
 LoadImpact uses AWS for cloud load generators. For the IP addresses used in the different load zones and filtering methods please refer directly to [Amazon](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html).
