@@ -10,11 +10,11 @@ order: 2
 
 As illustrated below LoadImpact 4.0 is composed of 3 major components:
 
-- **[k6]({{ site.baseurl }}/4.0/getting-started/product-overview/#k6)** - the [open source load testing tool](https://github.com/loadimpact/k6) created and maintained by LoadImpact.
+- **[k6]({{ site.baseurl }}/4.0/overview/product-overview/#k6)** - the [open source load testing tool](https://github.com/loadimpact/k6) created and maintained by LoadImpact.
 
-- **[LoadImpact Insights]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-insights)** - A LoadImpact cloud service offering. Insights enables you to store, analyze, plot trending graphs, and share your k6 test results with your team.
+- **[LoadImpact Insights]({{ site.baseurl }}/4.0/overview/product-overview/#loadimpact-insights)** - A LoadImpact cloud service offering. Insights enables you to store, analyze, plot trending graphs, and share your k6 test results with your team.
 
-- **[LoadImpact Cloud Execution]({{ site.baseurl }}/4.0/getting-started/product-overview/#load-impact-cloud-execution)** - A LoadImpact cloud service offering. Cloud execution enables you to run tests on the global cloud infrastructure managed by LoadImpact. We provide on-demand support for larger tests and geographically distributed tests.
+- **[LoadImpact Cloud Execution]({{ site.baseurl }}/4.0/overview/product-overview/#loadimpact-cloud-execution)** - A LoadImpact cloud service offering. Cloud execution enables you to run tests on the global cloud infrastructure managed by LoadImpact. We provide on-demand support for larger tests and geographically distributed tests.
 
 ![LoadImpact 4.0 product overview]({{ site.baseurl }}/assets/img/v4/getting-started/v4-product-overview.svg)
 
