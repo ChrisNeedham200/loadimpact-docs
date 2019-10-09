@@ -6,7 +6,7 @@ categories: [core-concepts]
 order: 9
 redirect_from:
   - /4.0/test-scripting/main-function/
-  - /4.0/core-concepts/main-function
+  - /4.0/core-concepts/main-function/
 ---
 
 ***

@@ -39,7 +39,7 @@ export function teardown() {
 
 ## Passing data from setup() to main and teardown() functions
 
-A convenient thing with how the `setup()`/`teardown()` functionality is implemented is that anything returned from the `setup()` function will be passed as the first argument to both the [main function]({{ site.baseurl }}/4.0/core-concepts/main-function) and the `teardown()` function:
+A convenient thing with how the `setup()`/`teardown()` functionality is implemented is that anything returned from the `setup()` function will be passed as the first argument to both the [default function]({{ site.baseurl }}/4.0/core-concepts/default-function/) and the `teardown()` function:
 
 {% highlight js linenos %}
 export function setup() {
@@ -64,7 +64,7 @@ export default function(setupData) {
 
 {% highlight js linenos %}
 export function setup() {
-  // slow requests... 
+  // slow requests...
 }
 export let options = {
     setupTimeout: '30s',
