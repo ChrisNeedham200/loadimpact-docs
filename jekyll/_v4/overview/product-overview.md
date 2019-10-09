@@ -4,6 +4,7 @@ title: LoadImpact product overview
 description: Am overview of the LoadImpact's product offering and related components
 categories: [overview]
 order: 2
+redirect_from: /4.0/getting-started/product-overview/
 ---
 
 ***

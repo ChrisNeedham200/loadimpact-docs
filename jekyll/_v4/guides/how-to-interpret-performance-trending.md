@@ -15,7 +15,7 @@ The performance trending graph plots single, high-level performance metrics for 
 
 The single high-level performance metric given in the performance trending graph is the _95% percentile_ of all requests included in the test. This means that 95% of the HTTP(s) requests in your test will have a load time that performs better than this value. Similar to looking at an individual tests `Response time`, a rising graph indicates degrading performance over time.
 
-Performance trending provides the most value when tests are executed on a regular basis. Refer to our [integrations]({{ site.baseurl }}/4.0/integrations/) for more information on integrating/automating your tests.
+Performance trending provides the most value when tests are executed on a regular basis. Refer to our [Guides and Integrations]({{ site.baseurl }}/4.0/guides/) for more information on integrating/automating your tests.
 
 **Note:** Failed tests will be shown in red, passing tests in green, and aborted tests will show a "negative" value.
 

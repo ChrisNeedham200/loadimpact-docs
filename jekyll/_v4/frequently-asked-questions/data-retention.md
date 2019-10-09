@@ -26,7 +26,7 @@ You can purchase a data retention plan during cancelation of your subscription. 
 
 ## Can I export my data?
 
-Yes, data can be exported, for more information on exporting data, refer to this article: [How to export the CSV data]({{ site.baseurl }}/4.0/result-analysis/csv-result-data-export/})
+Yes, data can be exported, for more information on exporting data, refer to this article: [How to export the CSV data]({{ site.baseurl }}/4.0/result-analysis/csv-result-data-export/)
 
 ## When can I purchase Data Retention
 

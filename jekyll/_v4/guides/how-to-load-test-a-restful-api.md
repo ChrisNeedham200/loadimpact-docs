@@ -281,7 +281,7 @@ Logically we should take action about the failed threshold. Should we increase t
 
 If you have been running these small tests locally to produce some working scripts and baseline results, like we did this guide, you should run larger tests on the LoadImpact [Cloud infrastructure]({{ site.baseurl }}{% link _v4/guides/cloud-execution.md %}).  You can simply change `k6 run` to `k6 cloud`.  That will tell k6 to archive and upload the necessary scripts to our cloud service and automatically start execution. No need to worry about managing load generators and other resources.
 
-Finally, you should also consider integrating these tests into your CI pipeline. We have some guides with some of the popular CI tools [here]({{ site.baseurl }}/4.0/integrations/).
+Finally, you should also consider integrating these tests into your CI pipeline. We have some guides with some of the popular CI tools [here]({{ site.baseurl }}/4.0/guides/).
 
 ***
 
@@ -292,7 +292,6 @@ Finally, you should also consider integrating these tests into your CI pipeline.
 - [Custom metrics]({{ site.baseurl }}{% link _v4/core-concepts/custom-metrics.md %})
 - [Thresholds]({{ site.baseurl }}{% link _v4/core-concepts/thresholds.md %})
 - [Module Imports]({{ site.baseurl }}{% link _v4/core-concepts/module-imports.md %})
-<!-- - [integrations]({{ site.baseurl }}/4.0/integrations/) -->
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE5NTM3MDIwNzldfQ==
 -->
