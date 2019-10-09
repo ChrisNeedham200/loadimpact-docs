@@ -92,7 +92,7 @@ export default function() {
 }
 {% endhighlight %}
 
-We import some functionality we need, make a single request to `https://test.loadimpact.com/` and then have our Virtual User sleep/think for 3 seconds. The [main function]({{ site.baseurl}}{% link _v4/core-concepts/default-function.md %}) is essentially a while true loop. As long as the test as time left on it and an iteration limit has not been met, Virtual Users will continue to iterate over it.
+We import some functionality we need, make a single request to `https://test.loadimpact.com/` and then have our Virtual User sleep/think for 3 seconds. The [main function]({{ site.baseurl}}{% link _v4/core-concepts/default-function.md %}) is essentially a while true loop. As long as the test has time left on it and an iteration limit has not been met, Virtual Users will continue to iterate over it.
 
 Let's run this test script with k6. Save it in a file on your computer (we'll assume it's saved to a file called `script.js` below). In a terminal, in the same working directory where you saved the file, execute the following command:
 
