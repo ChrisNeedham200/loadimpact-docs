@@ -5,6 +5,7 @@ description: Guide on how to integrate CircleCI with LoadImpact and k6. Shift le
 categories: [guides]
 order: 3
 redirect_from: /4.0/integrations/circleci-integration/
+redirect_to: https://blog.loadimpact.com/integrating-load-testing-with-circleci
 ---
 
 ***
