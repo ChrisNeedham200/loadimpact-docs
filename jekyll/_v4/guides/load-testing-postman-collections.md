@@ -7,6 +7,8 @@ order: 4
 redirect_from:
   - /4.0/how-to-tutorials/load-testing-with-postman-collections/
   - /4.0/guides/load-testing-with-postman-collections/
+redirect_to: https://blog.loadimpact.com/load-testing-with-postman-collections
+
 ---
 
 ***

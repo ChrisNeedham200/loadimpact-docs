@@ -5,6 +5,7 @@ description: Guide on how to create load tests in LoadImpact from your Postman c
 categories: [integrations]
 order: 2
 redirect_from: /knowledgebase/articles/894636-load-testing-with-postman
+redirect_to: https://blog.loadimpact.com/load-testing-with-postman-collections
 ---
 
 ***
