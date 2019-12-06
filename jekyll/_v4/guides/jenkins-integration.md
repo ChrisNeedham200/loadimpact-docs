@@ -5,6 +5,7 @@ description: Guide to integrate LoadImpact and k6 into your Jenkins pipeline. Sh
 categories: [guides]
 order: 2
 redirect_from: /4.0/integrations/jenkins-integration/
+redirect_to: https://blog.loadimpact.com/integrating-load-testing-with-jenkins
 ---
 
 ***
