@@ -5,6 +5,7 @@ description: Guide on how to integrate your Azure DevOps Pipelines with LoadImpa
 categories: [guides]
 order: 4
 redirect_from: /4.0/integrations/azure-devops-integration/
+redirect_to: https://blog.loadimpact.com/integrating-load-testing-with-azure-pipelines
 ---
 
 ***
