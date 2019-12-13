@@ -5,6 +5,7 @@ description: Guide on converting HAR files on the command line using k6 to creat
 categories: [guides]
 order: 4
 redirect_from: /4.0/how-to-tutorials/how-to-convert-har-to-k6-test/
+redirect_to: https://docs.k6.io/docs/session-recording-har-support
 ---
 
 ***
