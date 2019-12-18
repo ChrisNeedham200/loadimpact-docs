@@ -5,6 +5,7 @@ description: A guide on how to use Datadog alerts and Thresholds to fail your lo
 categories: [guides]
 order: 12
 redirect_from: /4.0/guides/how-to-use-datadog-alerts-to-fail-k6-test/
+redirect_to: https://blog.loadimpact.com/datadog-alerts-fail-load-test
 ---
 
 ***
