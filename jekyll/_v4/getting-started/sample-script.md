@@ -119,7 +119,7 @@ export default function() {
         let res = http.get("http://test.loadimpact.com/my_messages.php");
         let checkRes = check(res, {
             "is status 200": (r) => r.status === 200,
-            "is unauthorized header present": (r) => r.body.indexOf("Unauthorized") !== -1
+            "is unauthorized header present": (r) => r.body.indexOf("Unauthorized") !== -1 
         });
 
         // Record check failures
@@ -128,7 +128,7 @@ export default function() {
         res = http.post("http://test.loadimpact.com/login.php", { login: 'admin', password: '123', redir: '1' });
         checkRes = check(res, {
             "is status 200": (r) => r.status === 200,
-            "is welcome header present": (r) => r.body.indexOf("Welcome, admin!") !== -1
+            "is welcome header present": (r) => r.body.indexOf("Welcome, admin!") !== -1 /*for json responses you might use JSON.parse(r.body).property[0].property */
         });
 
         // Record successful logins
